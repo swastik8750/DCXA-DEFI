@@ -8,6 +8,7 @@ import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
 import ConnectWalletPage from "./Components/connectWalletPage";
 import { createTheme, ThemeProvider } from "@material-ui/core";
+import Bridge from "./Bridge/Bridge";
 
 const theme = createTheme({
   palette: {
@@ -40,6 +41,12 @@ function App() {
               exact
               path="/liquidity"
               component={Liquidity}
+            />
+
+            <Route
+              exact
+              path="/Bridge"
+              component={Bridge}
             />
           </ThemeProvider>
         </SnackbarProvider>

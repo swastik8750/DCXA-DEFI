@@ -7,16 +7,19 @@ export default function SwitchButton(props) {
   const changeStyles = (K) => {
     if (K === true) {
       let add_button = document.getElementById("add-button");
-      add_button.style.backgroundColor = "#ff0000";
-
+      add_button.style.backgroundColor = "#1f2739";
+      add_button.style.color = "#fff";
       let remove_button = document.getElementById("remove-button");
-      remove_button.style.backgroundColor = "#9e9e9e";
+      remove_button.style.backgroundColor = "#fff";
+      remove_button.style.color = "#000";
+
     } else {
-      let remove_button = document.getElementById("remove-button");
-      remove_button.style.backgroundColor = "#ff0000";
-
-      let add_button = document.getElementById("add-button");
-      add_button.style.backgroundColor = "#9e9e9e";
+      let remove_button = document.getElementById("add-button");
+      remove_button.style.backgroundColor = "#fff";
+      remove_button.style.color = "#000";
+      let add_button = document.getElementById("remove-button");
+      add_button.style.backgroundColor = "#1f2739";
+      add_button.style.color = "#fff";
     }
   };
 
@@ -25,8 +28,6 @@ export default function SwitchButton(props) {
       <ButtonGroup size="large" variant="contained">
         <Button
           id="add-button"
-          color="primary"
-          text="white"
           onClick={() => {
             setDeploy(true);
             changeStyles(true);
@@ -37,8 +38,6 @@ export default function SwitchButton(props) {
 
         <Button
           id="remove-button"
-          color="secondary"
-          text="white"
           onClick={() => {
             setDeploy(false);
             changeStyles(false);
