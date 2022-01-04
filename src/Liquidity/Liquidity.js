@@ -45,7 +45,7 @@ function Liquidity() {
 
   return (
     <div>
-      <Container>
+      <Container className="mt-5 mb-5">
         <Paper className={classes.paperContainer}>
           <Typography variant="h5" className={classes.title}>
             <SwitchButton setDeploy={setDeploy} />
@@ -55,18 +55,6 @@ function Liquidity() {
         </Paper>
       </Container>
 
-      <Grid
-        container
-        className={classes.footer}
-        direction="row"
-        justifyContent="center"
-        alignItems="flex-end"
-      >
-        <p>
-          Clearmatics Autonity Uniswap | Get AUT for use in the bakerloo testnet{" "}
-          <a href="https://faucet.bakerloo.autonity.network/">here</a>
-        </p>
-      </Grid>
     </div>
   );
 }
