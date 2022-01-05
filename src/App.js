@@ -35,28 +35,23 @@ function App() {
           <ThemeProvider theme={theme}>
             <NarBar />
             <Route
-              exact
               path="/swap"
               component={CoinSwapper}
             />
              <Route
-              exact
               path="/borrow"
               component={Borrow_Detailed}
             />
             <Route
-              exact
               path="/liquidity"
               component={Liquidity}
             />
 
             <Route
-              exact
               path="/Bridge"
               component={Bridge}
             />
             <Route
-              exact
               path="/Airdrop"
               component={Airdrop}
             />
