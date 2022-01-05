@@ -9,7 +9,7 @@ import Liquidity from "./Liquidity/Liquidity";
 import ConnectWalletPage from "./Components/connectWalletPage";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Bridge from "./Bridge/Bridge";
-
+import Borrow_Detailed from "./Borrow/Borrow_Detailed";
 const theme = createTheme({
   palette: {
     primary: {
@@ -36,6 +36,11 @@ function App() {
               exact
               path="/swap"
               component={CoinSwapper}
+            />
+             <Route
+              exact
+              path="/borrow"
+              component={Borrow_Detailed}
             />
             <Route
               exact
