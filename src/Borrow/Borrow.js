@@ -1,32 +1,60 @@
-import React from 'react'
-import * as A from "react-bootstrap";
-export default function Borrow_Detailed() {
-    return (
-        <div>
-  <A.Card border="primary" style={{ width: '100rem' }}style={{ height: '30vh' }}>
-    <A.Card.Header>Header</A.Card.Header>
-    <A.Card.Body>
-      <A.Card.Title>Primary A.Card Title</A.Card.Title>
-      <A.Card.Text>
-        Some quick example text to build on the A.Card title and make up the bulk
-        of the A.Card's content.
-      </A.Card.Text>
-    </A.Card.Body>
-  </A.Card>
-  <br />
+import React from 'react';
+import '../Airdrop/Airdrop.css';
 
-  <A.Card border="secondary" style={{ width: '100rem' }}style={{ height: '30vh' }}>
-    <A.Card.Header>Header</A.Card.Header>
-    <A.Card.Body>
-      <A.Card.Title>Secondary A.Card Title</A.Card.Title>
-      <A.Card.Text>
-        Some quick example text to build on the A.Card title and make up the bulk
-        of the A.Card's content.
-      </A.Card.Text>
-    </A.Card.Body>
-  </A.Card>
-  <br />  
-  <br />
-        </div>
-    )
+function Borrow() {
+    return (
+        <>
+            <h1 className='mt-5'><span className="yellow">BORROW</span></h1>
+            <table className="containerr">
+                <thead>
+                    <tr>
+                        <th><h1>Assets</h1></th>
+                        <th><h1>Available to Borrow</h1></th>
+                        <th><h1>Variable APY</h1></th>
+                        <th><h1>Stable APY</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                        <td>ETH</td>
+                        <td>9518</td>
+                        <td>6369</td>
+                        <td>01:32:50</td>
+                    </tr>
+                    <tr>
+                        <td>DCXA</td>
+                        <td>7326</td>
+                        <td>10437</td>
+                        <td>00:51:22</td>
+                    </tr>
+                    <tr>
+                        <td>DAI</td>
+                        <td>4162</td>
+                        <td>5327</td>
+                        <td>00:24:34</td>
+                    </tr>
+                    <tr>
+                        <td>WETH</td>
+                        <td>3654</td>
+                        <td>6369</td>
+                        <td>00:12:10</td>
+                    </tr>
+                    <tr>
+                        <td>USDT</td>
+                        <td>2002</td>
+                        <td>6369</td>
+                        <td>00:46:19</td>
+                    </tr>
+                    <tr>
+                        <td>BTC</td>
+                        <td>4623</td>
+                        <td>6369</td>
+                        <td>00:31:52&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </>
+    );
 }
+
+export default Borrow;

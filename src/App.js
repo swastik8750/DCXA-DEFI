@@ -6,6 +6,7 @@ import CoinSwapper from "./CoinSwapper/CoinSwapper";
 import { Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
+import Borrow from "./Borrow/Borrow";
 import ConnectWalletPage from "./Components/connectWalletPage";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Bridge from "./Bridge/Bridge";
@@ -39,8 +40,15 @@ function App() {
               component={CoinSwapper}
             />
              <Route
-              path="/borrow"
+              exact
+              path="/borrow_detailed"
+
               component={Borrow_Detailed}
+            />
+             <Route
+              exact
+              path="/borrow"
+              component={Borrow}
             />
             <Route
               path="/liquidity"
