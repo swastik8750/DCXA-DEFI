@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
-    title: "Swap",
-    url: "/autonity-uniswap-interface/",
+    title: "DCXa",
+    url: "/",
     cName: "nav-links",
   },
   {

@@ -66,3 +66,17 @@
   color:black;
   padding: 6px;
 }
+
+.mnlink
+{
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+Link:active{
+  color:white;
+}
+
+.mnlink:hover{
+  color: #f4f4f4;
+}

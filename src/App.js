@@ -9,6 +9,7 @@ import Liquidity from "./Liquidity/Liquidity";
 import ConnectWalletPage from "./Components/connectWalletPage";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Bridge from "./Bridge/Bridge";
+import Airdrop from "./Airdrop/Airdrop";
 
 const theme = createTheme({
   palette: {
@@ -47,6 +48,11 @@ function App() {
               exact
               path="/Bridge"
               component={Bridge}
+            />
+            <Route
+              exact
+              path="/Airdrop"
+              component={Airdrop}
             />
           </ThemeProvider>
         </SnackbarProvider>

@@ -26,8 +26,10 @@ function NavBar() {
             <A.Nav.Link href="#farm" className="m-2">Farm</A.Nav.Link>
             <A.Nav.Link href="/lending" className="m-2">Lending</A.Nav.Link>
             <A.Nav.Link href="#borrowing" className="m-2">Borrowing</A.Nav.Link>
-            <A.Nav.Link href="#airdrop" className="m-2">Airdrops</A.Nav.Link>
+            <A.Nav.Link className="m-2"><Link className="mnlink" to="/Airdrop">Airdrops</Link></A.Nav.Link>
+           
             <A.Nav.Link className="m-2">NFTs</A.Nav.Link>
+            
           </A.Nav>
         </A.Navbar.Collapse>
       </A.Container>
