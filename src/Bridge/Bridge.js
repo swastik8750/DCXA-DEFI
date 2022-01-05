@@ -25,7 +25,7 @@ export default function Bridge() {
                 </Grid>
                 <Grid item className="mt-4 ">
                     <Typography gutterBottom variant="subtitle1" component="div" >
-                        <TextField style={{ width: 200 }}  size="small" id="outlined-basic" label="Amount" variant="outlined" placeholder='0' InputProps={{ endAdornment: <button className="send leftr">Transfer</button> }} />
+                        <TextField  className="input" style={{ width: 200 }}  size="small" id="outlined-basic" label="Amount" variant="outlined" placeholder='0' InputProps={{ endAdornment: <button className="send leftr">Transfer</button> }} />
                     </Typography>
                 </Grid>
                 <Grid item className="mt-4">
