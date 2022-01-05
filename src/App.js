@@ -12,7 +12,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 import Bridge from "./Bridge/Bridge";
 import Borrow_Detailed from "./Borrow/Borrow_Detailed";
 import Airdrop from "./Airdrop/Airdrop";
-
+import Lend from "./Lend/Lend";
 const theme = createTheme({
   palette: {
     primary: {
@@ -53,6 +53,10 @@ function App() {
             <Route
               path="/liquidity"
               component={Liquidity}
+            />
+            <Route
+              path="/lend"
+              component={Lend}
             />
 
             <Route
