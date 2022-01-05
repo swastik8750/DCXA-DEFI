@@ -1,0 +1,105 @@
+.cont{
+    width: 90%;
+    background-color: #42CCA1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 17vw;
+    border-radius: 15px;
+}
+
+.first{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.second{
+    height: 100%;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.third{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: khaki;
+}
+
+.fourth{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+
+.first-btn{
+    background-color: #3266D3;
+    color: white;
+    font-size: small;
+    width: fit-content;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.second-btn{
+    background-color: #D117E7;
+    color: white;
+    font-size: small;
+    width: fit-content;
+    height: 40px;
+    border-radius: 10px ;
+}
+.white{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.design {
+    background: linear-gradient(90deg, #50d9f6, #bd70d5);
+}
+
+.bigger{
+    font-size: medium;
+    margin: 0;
+}
+
+.whiter{
+    color: white;
+}
+
+.linkk a{
+    text-decoration: none;
+    color: white;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.farm{
+    background: linear-gradient(
+90deg, rgba(238, 58, 136, 0.8) 0%, rgba(54, 108, 244, 0.8) 100%);
+    width: fit-content;
+    padding: 5%;
+    padding-left: 12%;
+    padding-right: 12%;
+    border-radius: 15px;
+    border:none;
+    color: white;
+}
+.farm:hover{
+    background: linear-gradient(
+        90deg, rgba(212, 17, 102, 0.8) 0%, rgba(15, 77, 236, 0.8) 100%);
+}
