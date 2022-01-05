@@ -4,22 +4,23 @@ import graph from '../Borrow/img1.png';
  export default function Borrow_Detailed() {
 
 return (
-<div class="borrow_card">
-
+  <div>
+    <tax></tax>
   <div className="Borrow_Detailed_top">
-    <div>
-    <p>You Borrow</p>
-      <p>-</p>
-    </div>
-    <div>
-    <p>Total Collatral</p>
-      <p>-</p>
-    </div>
-    <div>
-    <p>Loan to Value</p>
-      <p>-</p>
-    </div>
-    </div>
+  <div>
+  <p>You Borrow</p>
+    <p>-</p>
+  </div>
+  <div>
+  <p>Total Collatral</p>
+    <p>-</p>
+  </div>
+  <div>
+  <p>Loan to Value</p>
+    <p>-</p>
+  </div>
+  </div>
+<div class="borrow_card">
     <div className="Borrow_Detailed_Size">
     <div>
       DCXA BORROW SYSTEM
@@ -68,6 +69,6 @@ return (
   </div>
 
 </div>
-
+</div>
 </div>
 ); }
