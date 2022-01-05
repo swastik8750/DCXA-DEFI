@@ -11,7 +11,7 @@ import { grey } from '@mui/material/colors';
 
 export default function Bridge() {
     return (
-        <Paper className="mt-5 container mb-4" sx={{ pt: 10, pb: 10, pl: 2, pr: 2, margin: 'auto', maxWidth: 750, flexGrow: 1 }}>
+        <Paper className="mt-5 container_bridge mb-4" sx={{ pt: 10, pb: 10, pl: 2, pr: 2, margin: 'auto', maxWidth: 750, flexGrow: 1 }}>
             <div className="heading mb-4">BRIDGE</div>
             <Grid container spacing={6} className="pb-3 pr pt-3">
                 <Grid item className="mt-4">
@@ -25,7 +25,7 @@ export default function Bridge() {
                 </Grid>
                 <Grid item className="mt-4 ">
                     <Typography gutterBottom variant="subtitle1" component="div" >
-                        <TextField style={{ width: 200 }}  size="small" id="outlined-basic" label="Amount" variant="outlined" placeholder='0' InputProps={{ endAdornment: <button className="send leftr">Transfer</button> }} />
+                        <TextField  className="input" style={{ width: 200 }}  size="small" id="outlined-basic" label="Amount" variant="outlined" placeholder='0' InputProps={{ endAdornment: <button className="send leftr">Transfer</button> }} />
                     </Typography>
                 </Grid>
                 <Grid item className="mt-4">
