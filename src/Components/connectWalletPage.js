@@ -48,11 +48,7 @@ function ConnectWalletPage() {
   const classes = useStyles();
   return (
     <div>
-      <div className="Title">
-        <h1 className="navbar-logo">
-          <img src={logo} className="logo"></img> Autonity Uniswap
-        </h1>
-      </div>
+      
 
       <Container>
         <Paper className={classes.paperContainer}>
@@ -74,10 +70,6 @@ function ConnectWalletPage() {
         justifyContent="center"
         alignItems="flex-end"
       >
-        <p>
-          Clearmatics Autonity Uniswap | Get AUT for use in the bakerloo testnet{" "}
-          <a href="https://faucet.bakerloo.autonity.network/">here</a>
-        </p>
       </Grid>
     </div>
   );
