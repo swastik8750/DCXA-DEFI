@@ -12,7 +12,12 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 import Bridge from "./Bridge/Bridge";
 import Borrow_Detailed from "./Borrow/Borrow_Detailed";
 import Airdrop from "./Airdrop/Airdrop";
+
+import Farming from "./Farming/Farming"
+
+
 import Lend from "./Lend/Lend";
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -66,6 +71,15 @@ function App() {
             <Route
               path="/Airdrop"
               component={Airdrop}
+            />
+            <Route
+              path="/Farming"
+              render={() =>
+                <React.Fragment>
+                  <Farming name="nishant" bestway="af" />
+                  <Farming name="suraj" bestway="oknjs" />
+                </React.Fragment>
+              }
             />
           </ThemeProvider>
         </SnackbarProvider>
