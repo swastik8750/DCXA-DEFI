@@ -23,11 +23,17 @@ function NavBar() {
               <A.NavDropdown.Item className="mt-2"><Link className="me-auto link" to="/liquidity">Add Liquidity</Link></A.NavDropdown.Item>
               <A.NavDropdown.Item className="mt-2"><Link className="me-auto link" to="/Bridge">Bridge</Link></A.NavDropdown.Item>
             </A.NavDropdown>
+
             <A.Nav.Link className="m-2"><Link className="mnlink" to="/Farming">Farm</Link></A.Nav.Link>
-            <A.Nav.Link href="/lending" className="m-2">Lending</A.Nav.Link>
-            <A.Nav.Link className="m-2"><Link className="mnlink" to="/borrow">Borrow</Link></A.Nav.Link>
-            <A.Nav.Link className="m-2"><Link className="mnlink" to="/Airdrop">Airdrops</Link></A.Nav.Link>
            
+
+            <A.Nav.Link  className="m-2"><Link className="mnlink" to="/lend">Lending</Link></A.Nav.Link>
+
+            <A.Nav.Link className="m-2"><Link className="mnlink" to="/borrow">Borrow</Link></A.Nav.Link>
+
+            <A.Nav.Link href="/farm" className="m-2">Farm</A.Nav.Link>
+            <A.Nav.Link href="/borrow" className="m-2">Borrowing</A.Nav.Link>
+            <A.Nav.Link className="m-2"><Link className="mnlink" to="/Airdrop">Airdrops</Link></A.Nav.Link>
             <A.Nav.Link className="m-2">NFTs</A.Nav.Link>
             
           </A.Nav>

@@ -6,12 +6,17 @@ import CoinSwapper from "./CoinSwapper/CoinSwapper";
 import { Route } from "react-router-dom";
 import { SnackbarProvider } from "notistack";
 import Liquidity from "./Liquidity/Liquidity";
+import Borrow from "./Borrow/Borrow";
 import ConnectWalletPage from "./Components/connectWalletPage";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import Bridge from "./Bridge/Bridge";
 import Borrow_Detailed from "./Borrow/Borrow_Detailed";
 import Airdrop from "./Airdrop/Airdrop";
+
 import Farming from "./Farming/Farming"
+
+
+import Lend from "./Lend/Lend";
 
 const theme = createTheme({
   palette: {
@@ -40,12 +45,23 @@ function App() {
               component={CoinSwapper}
             />
              <Route
-              path="/borrow"
+              exact
+              path="/borrow_detailed"
+
               component={Borrow_Detailed}
+            />
+             <Route
+              exact
+              path="/borrow"
+              component={Borrow}
             />
             <Route
               path="/liquidity"
               component={Liquidity}
+            />
+            <Route
+              path="/lend"
+              component={Lend}
             />
 
             <Route
