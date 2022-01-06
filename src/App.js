@@ -35,6 +35,47 @@ function App() {
   // Check if wallet is here:
   try {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const array_farm = [
+      {
+        header:1
+      },
+      {
+        name: "SHDW-USDC",
+        tvl: "$3.82M",
+        yield: "245.62%",
+        trading_fee_income: "215.6%",
+        total_apr:"436.05%",
+        daily_apr:"1.19%",
+        previous:"214%",
+        new:"233%",
+        header:0
+      },
+      {
+        name: "SHDW-USDC",
+        tvl: "$3.82M",
+        yield: "245.62%",
+        trading_fee_income: "215.6%",
+        total_apr:"436.05%",
+        daily_apr:"1.19%",
+        previous:"214%",
+        new:"233%",
+        header:0
+      },
+      {
+        name: "SHDW-SOL",
+        tvl: "$68.23K ",
+        yield: "3254.62%",
+        trading_fee_income: "78.6%",
+        total_apr:"345.05%",
+        daily_apr:"5.19%",
+        previous:"284%",
+        new:"543%",
+        header:0
+      }
+    ]
+    const Itemlist = array_farm.map(item =>
+      <Farming user={item}></Farming>
+    );
     return (
       <div className="App">
         <SnackbarProvider maxSnack={3}>
@@ -76,8 +117,7 @@ function App() {
               path="/Farming"
               render={() =>
                 <React.Fragment>
-                  <Farming name="nishant" bestway="af" />
-                  <Farming name="suraj" bestway="oknjs" />
+                  {Itemlist}
                 </React.Fragment>
               }
             />
