@@ -13,7 +13,7 @@
    font-weight: 300;
    line-height:1em;
    text-align: center;
-   color: #4DC3FA;
+   color: #fff;
  }
  
  h2 {
@@ -49,9 +49,6 @@
  .containerr td {
        font-weight: normal;
        font-size: 1em;
-   -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-        -moz-box-shadow: 0 2px 2px -2px #0E1119;
-             box-shadow: 0 2px 2px -2px #0E1119;
  }
  
  .containerr {
@@ -62,6 +59,10 @@
    display: table;
    padding: 0 0 8em 0;
    margin-top: 30px;
+   border-radius: 20px;
+   background: rgba(0,0,0,.4);
+   border: 1px solid rgba(255,255,255,.2);
+   box-shadow: 2px 2px 8px rgba(255,255,255,.1);
  }
  
  .containerr td, .containerr th {
@@ -70,31 +71,16 @@
    padding-left:2%;  
  }
  
- /* Background-color of the odd rows */
- .containerr tr:nth-child(odd) {
-       background-color: #323C50;
- }
- 
- /* Background-color of the even rows */
- .containerr tr:nth-child(even) {
-       background-color: #2C3446;
- }
- 
  .containerr th {
        background-color: #1F2739;
        color:white;
  }
  
  .containerr td:first-child { color: #FB667A; }
- 
  .containerr tbody tr:hover {
     background-color: #FFF842;
- -webkit-box-shadow: 0 6px 6px -6px #0E1119;
-        -moz-box-shadow: 0 6px 6px -6px #0E1119;
-             box-shadow: 0 6px 6px -6px #0E1119;
-             color: #403E10;
-   font-weight: bold;
-   
+       font-weight: bold;
+      color: #000;
    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
    transform: translate3d(6px, -6px, 0);
    
@@ -104,19 +90,7 @@
    transition-timing-function: line;
  }
  
- .containerr td:hover {
-   
-   color: #403E10;
-   font-weight: bold;
-   
-   box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
-   transform: translate3d(6px, -6px, 0);
-   
-   transition-delay: 0s;
-       transition-duration: 0.4s;
-       transition-property: all;
-   transition-timing-function: line;
- }
+
  
  @media (max-width: 800px) {
  .containerr th h1 {
@@ -127,7 +101,8 @@
      margin: auto;
  }
  .containerr td{
+   
      font-size: smaller;
      text-align: center;
  }
- }
+ } 
