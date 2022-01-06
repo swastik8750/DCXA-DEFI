@@ -73,9 +73,11 @@ function App() {
         header:0
       }
     ]
+   
     const Itemlist = array_farm.map(item =>
       <Farming user={item}></Farming>
     );
+  
     return (
       <div className="App">
         <SnackbarProvider maxSnack={3}>
@@ -103,6 +105,7 @@ function App() {
             <Route
               path="/lend"
               component={Lend}
+            
             />
 
             <Route
