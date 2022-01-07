@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css';
 import * as THREE from 'three';
+import OrbitControls from './OrbitControls';
+import SimplexNoise from 'simplex-noise';
 export default function Home() {
     let renderer,
 scene,
@@ -9,16 +11,11 @@ sphereBg,
 nucleus,
 stars,
 controls,
-container = document.getElementById("canvas_container"),
+my_container = document.getElementById("canvas_my_container"),
 timeout_Debounce,
 noise = new SimplexNoise(),
 cameraSpeed = 0,
 blobScale = 3;
-
-
-init();
-animate();
-
 
 function init() {
     scene = new THREE.Scene();
@@ -38,12 +35,12 @@ function init() {
         antialias: true,
         alpha: true
     });
-    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setSize(my_container.clientWidth, my_container.clientHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
-    container.appendChild(renderer.domElement);
+    my_container.appendChild(renderer.domElement);
 
     //OrbitControl
-    controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
     controls.autoRotateSpeed = 4;
     controls.maxDistance = 350;
@@ -194,13 +191,16 @@ window.addEventListener("resize", () => {
     timeout_Debounce = setTimeout(onWindowResize, 80);
 });
 function onWindowResize() {
-    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.aspect = my_container.clientWidth / my_container.clientHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize(container.clientWidth, container.clientHeight);
+    //fdsf
+    renderer.setSize(my_container.clientWidth, my_container.clientHeight);
 }
+init();
+animate();
     return (
         <div className="my-body">
-            <div id="canvas_container"></div>
+            <div id="canvas_my_container"></div>
         </div>
     )
 }

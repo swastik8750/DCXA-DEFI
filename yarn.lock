@@ -13625,6 +13625,11 @@
   dependencies:
     "is-arrayish" "^0.3.1"
 
+"simplex-noise@^3.0.1":
+  "integrity" "sha512-eww0SFiWLyOaUKQMJ7gbdvQJvULeJdM/Y4BiC3rrOQnYHo+MSPh465/qeXSZkpTdB9/HthumpnYD3DobZweBBQ=="
+  "resolved" "https://registry.npmjs.org/simplex-noise/-/simplex-noise-3.0.1.tgz"
+  "version" "3.0.1"
+
 "sisteransi@^1.0.5":
   "integrity" "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="
   "resolved" "https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz"
@@ -14395,7 +14400,12 @@
   "resolved" "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
   "version" "0.2.0"
 
-"three@^0.124.0", "three@>=0.126":
+"three-orbitcontrols@^2.110.3":
+  "integrity" "sha512-BNNbksJwbN3/MmT0X/gjz5ZCchm7bjk26SUdtJYRxfEYjDfkb/0PeUTHE/KuyJ5vb/owK3mojyy3vcqDx99sRA=="
+  "resolved" "https://registry.npmjs.org/three-orbitcontrols/-/three-orbitcontrols-2.110.3.tgz"
+  "version" "2.110.3"
+
+"three@^0.124.0", "three@>= 0.110.0", "three@>=0.126":
   "integrity" "sha512-ROXp1Ly7YyF+jC910DQyAWj++Qlw2lQv0qwYLNQwdDbjk4bsOXAfGO92wYTMPNei1GMJUmCxSxc3MjGBTS09Rg=="
   "resolved" "https://registry.npmjs.org/three/-/three-0.124.0.tgz"
   "version" "0.124.0"
