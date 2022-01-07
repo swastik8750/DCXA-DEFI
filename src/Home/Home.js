@@ -5,18 +5,17 @@ import OrbitControls from './OrbitControls';
 import SimplexNoise from 'simplex-noise';
 export default function Home() {
     let renderer,
+    my_container = document.getElementById('canvas_my_container'),
 scene,
 camera,
 sphereBg,
 nucleus,
 stars,
 controls,
-my_container = document.getElementById("canvas_my_container"),
 timeout_Debounce,
 noise = new SimplexNoise(),
 cameraSpeed = 0,
 blobScale = 3;
-
 function init() {
     scene = new THREE.Scene();
 
@@ -35,10 +34,9 @@ function init() {
         antialias: true,
         alpha: true
     });
-    renderer.setSize(my_container.clientWidth, my_container.clientHeight);
+    renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.8);
     renderer.setPixelRatio(window.devicePixelRatio);
     my_container.appendChild(renderer.domElement);
-
     //OrbitControl
     controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
@@ -193,14 +191,12 @@ window.addEventListener("resize", () => {
 function onWindowResize() {
     camera.aspect = my_container.clientWidth / my_container.clientHeight;
     camera.updateProjectionMatrix();
-    //fdsf
     renderer.setSize(my_container.clientWidth, my_container.clientHeight);
 }
 init();
 animate();
     return (
         <div className="my-body">
-            <div id="canvas_my_container"></div>
         </div>
     )
 }

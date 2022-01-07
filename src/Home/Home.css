@@ -13,8 +13,8 @@ canvas {
 }
 
 #canvas_my_container {
-    width: 100%;
-    height: 100vh;
+    width: 1000px;
+    height: 1000px;
 }
 
 button {
