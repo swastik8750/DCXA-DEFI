@@ -1,17 +1,62 @@
 import React from 'react';
 import './Farming.css';
 import { Button } from 'react-bootstrap';
+import myicon from '../icons/svg/icon/usdc.svg'
 
 function Farming(props) {
     const header = props.user.header;
-    let content;
-    if (!header) 
-    {
-        content=
-        <div className="cont">
-                <div className="first according">
+    function importAll(r) {
+        let images = {};
+        r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+        return images;
+    }
+    const images = importAll(require.context('../icons/svg/icon', false, /\.(png|jpe?g|svg)$/));
+    // console.log(images['sol.svg'].default);
 
-                    <div className='p-2 white'>{props.user.name}</div>
+    // var source = images['sol.svg'].default;
+
+    var image_name1, image_name2, image_name;
+    if (header == 0) {
+        image_name = props.user.name;
+        image_name1 = image_name.split("-")[0];
+        image_name2 = image_name.split("-")[1];
+        image_name2 = image_name2.toLowerCase();
+        image_name1 = image_name1.toLowerCase();
+
+        try {
+            if (image_name1 != 'dcxa')
+                image_name1 = images[image_name1 + '.svg'].default;
+            else
+                image_name1 = images[image_name1 + '.png'].default;
+        }
+        catch {
+            image_name1 = images['otherwise.svg'].default;
+        }
+        try {
+            if (image_name2 != 'dcxa')
+                image_name2 = images[image_name2 + '.svg'].default;
+            else
+                image_name2 = images[image_name2 + '.png'].default;
+        }
+        catch {
+
+            image_name2 = images['otherwise.svg'].default;
+        }
+
+    }
+
+    let content;
+    if (!header) {
+        content =
+            <div className="cont">
+                <div className="first according">
+                    <div className='p-2 white'>
+                        <div className='imgsize'>
+                            <img className="img" src={image_name1} />
+                            <img className='img negmarginleft' src={image_name2} />
+                            <span>{props.user.name}</span></div>
+                    </div>
+
                     <div className='flex p-2'>
                         <button className='according first-btn m-1'>NEW</button>
                         <button className="according second-btn m-1"> DOUBLE TIP</button>
@@ -39,18 +84,17 @@ function Farming(props) {
                 </div>
             </div>
     }
-    else
-    {
-        content=
-        <div className="cont yellow change">
+    else {
+        content =
+            <div className="cont yellow change">
                 <div className="first according bigger">
                     STRATEGY
                 </div>
                 <div className="second center according bigger">
-                   APY
+                    APY
                 </div>
                 <div className="third center according bigger">
-                   APR
+                    APR
                 </div>
                 <div className="fourth center according bigger">
                     LEVERAGE
