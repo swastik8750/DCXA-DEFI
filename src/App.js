@@ -51,6 +51,28 @@ function App() {
         header:0
       },
       {
+        name: "DCXA-USDC",
+        tvl: "$3.82M",
+        yield: "245.62%",
+        trading_fee_income: "215.6%",
+        total_apr:"436.05%",
+        daily_apr:"1.19%",
+        previous:"214%",
+        new:"233%",
+        header:0
+      },
+      {
+        name: "POLIS-RAY",
+        tvl: "$3.82M",
+        yield: "245.62%",
+        trading_fee_income: "215.6%",
+        total_apr:"436.05%",
+        daily_apr:"1.19%",
+        previous:"214%",
+        new:"233%",
+        header:0
+      },
+      {
         name: "SHDW-USDC",
         tvl: "$3.82M",
         yield: "245.62%",
