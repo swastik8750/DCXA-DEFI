@@ -8,14 +8,21 @@
     box-shadow: 2px 2px 8px rgba(255,255,255,.1);
     width: 80%;
 }
+.lend_context_top{
+    width: 100%;
+}
 .lend_text
 {
     font-size: 24px;
     font-family: "Arial Black";
     padding-bottom: 24px;
     margin-bottom: 24px;
+    width: 100%;
+
     display: flex;
+    color: yellow;
     align-items: center;
+    text-align: center;
     font-weight: bold;
 }
 .lend_span{
@@ -32,6 +39,8 @@
 }
 .lend_main_containerr1{
     width: 100%;
+    font-weight: bolder;
+    
     margin: auto;
     display: flex;
 margin-bottom: 20px;
@@ -41,12 +50,18 @@ margin-bottom: 20px;
     display: inline-block;
     height: auto;
     width:12%;
-    font-size: small;
+    font-size: 2.5vmin;
+
     justify-content: space-between;
     padding: 0.5em 2em;
-    color: white;
     text-align: left;
     margin: 2px;
+}
+.lend_main_containerr>.lend_row{
+    color: white;
+}
+.lend_main_containerr1>.lend_row{
+    color: rgb(156, 178, 192);
 }
 .lend_main_containerr1:last-child,.lend_main_containerr2:last-child
 {
@@ -54,7 +69,10 @@ margin-bottom: 20px;
 }
 .supply2
 {
-    color: black;
+    color: rgb(68, 61, 61);
+    font-weight: bolder;
+    
+    
 }
 .lend_apy{
     background: linear-gradient(
@@ -65,11 +83,13 @@ margin-bottom: 20px;
 .lend_button{
    
     display: flex;
+ 
     height: 100%;
 }
 .lend_button button{
-    /* display: inline-block; */
+    
     width: auto;
+   
  
     cursor: pointer;
     padding: 0 20px;

@@ -30,6 +30,7 @@ function NavBar() {
             <A.Nav.Link className="m-2">NFTs</A.Nav.Link>
             
           </A.Nav>
+          
         </A.Navbar.Collapse>
       </A.Container>
 

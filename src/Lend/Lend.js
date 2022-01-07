@@ -44,19 +44,19 @@ export default function Lend(props) {
   let content;
   content = (
     <div>
-      <div className="lend_context">
+      <div className="lend_context ">
         <div className="lend_context_top">
-          <h2 className="lend_text">Active Poll</h2>
+          <h2 className="lend_text center">Active Poll</h2>
         </div>
-        <span className="lend_span"></span>
+        <span className="lend_span mb-3"></span>
         <div className="lend_main_containerr1">
-          <div className="lend_row">POOL</div>
-          <div className="lend_row">APY</div>
-          <div className="lend_row">Total Supply</div>
-          <div className="lend_row">Total Borrow</div>
-          <div className="lend_row">Utilization</div>
-          <div className="lend_row">APY(14d avg.)</div>
-          <div className="lend_row"></div>
+          <div className="lend_row ">POOL</div>
+          <div className="lend_row ">APY</div>
+          <div className="lend_row  ">Total Supply</div>
+          <div className="lend_row ">Total Borrow</div>
+          <div className="lend_row ">Utilization</div>
+          <div className="lend_row ">APY(14d avg.)</div>
+          <div className="lend_row "></div>
         </div>
 
         {Itemlist_Lend}
