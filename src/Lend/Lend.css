@@ -33,6 +33,7 @@
 }
 .lend_main_containerr{
     width: 100%;
+    line-height:30px ;
     display: flex;
     border-bottom: 2px solid rgba(255,255,255,.1);
     margin: auto;
