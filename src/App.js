@@ -12,7 +12,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 import Bridge from "./Bridge/Bridge";
 import Borrow_Detailed from "./Borrow/Borrow_Detailed";
 import Airdrop from "./Airdrop/Airdrop";
-
+import Home from "./Home/Home";
 import Farming from "./Farming/Farming"
 
 
@@ -106,6 +106,10 @@ function App() {
         <SnackbarProvider maxSnack={3}>
           <ThemeProvider theme={theme}>
             <NarBar />
+            <Route
+              path="/"
+              component={Home}
+            />
             <Route
               path="/swap"
               component={CoinSwapper}
