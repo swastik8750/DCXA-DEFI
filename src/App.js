@@ -118,6 +118,12 @@ function App() {
             />
              <Route
               exact
+              path="/"
+
+              component={Home}
+            />
+             <Route
+              exact
               path="/borrow"
               component={Borrow}
             />
