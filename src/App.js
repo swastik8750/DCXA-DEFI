@@ -106,10 +106,10 @@ function App() {
         <SnackbarProvider maxSnack={3}>
           <ThemeProvider theme={theme}>
             <NarBar />
-            <Route
-              path="/"
-              component={Home}
-            />
+//             <Route
+//               path="/"
+//               component={Home}
+//             />
             <Route
               path="/swap"
               component={CoinSwapper}
