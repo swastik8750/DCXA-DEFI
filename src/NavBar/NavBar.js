@@ -36,7 +36,7 @@ function NavBar() {
             <A.Nav.Link  className="m-2"><Link className="mnlink" to="/lend">Lending</Link></A.Nav.Link>
             <A.Nav.Link className="m-2"><Link className="mnlink" to="/borrow">Borrow</Link></A.Nav.Link>
             <A.Nav.Link className="m-2"><Link className="mnlink" to="/Airdrop">Airdrops</Link></A.Nav.Link>
-            <A.Nav.Link className="m-2">NFTs</A.Nav.Link>
+            <A.Nav.Link className="m-2" ><Link className="mnlink" to="/NFT">NFTs</Link></A.Nav.Link>
             
           </A.Nav>
           
