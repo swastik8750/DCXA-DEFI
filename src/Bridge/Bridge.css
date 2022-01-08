@@ -20,12 +20,13 @@
     font-size: medium;
     right: 0;
 }
-.heading{
-    color:yellow;
-}
+
 .pr{display: flex !important;
     align-items: center;
     justify-content: center;
+}
+.heading{
+color:yellow;
 }
 .leftr{
     margin-right: 0px !important;
