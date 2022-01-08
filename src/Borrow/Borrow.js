@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../Airdrop/Airdrop.css';
 
 function Borrow() {
+    useEffect(() => {
+     document.title = "DCXA-BORROW";
+   }, []);
     return (
         <>
             <h1 className='mt-5'><span className="yellow">BORROW</span></h1>

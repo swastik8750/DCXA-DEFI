@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../Lend/Lend.css";
 import LendRow from "./LendRow";
 
 export default function Lend(props) {
+  useEffect(() => {
+     document.title = "DCXA-LENDING";
+   }, []);
   const array_Lend = [
     {
       pool: "USDC",

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useEffect} from 'react';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -10,6 +11,9 @@ import { grey } from '@mui/material/colors';
 
 
 export default function Bridge() {
+    useEffect(() => {
+     document.title = "DCXA-BRIDGE";
+   }, []);
     return (
         <Paper className="mt-5 container_bridge mb-4" sx={{ pt: 10, pb: 10, pl: 2, pr: 2, margin: 'auto', maxWidth: 750, flexGrow: 1 }}>
             <div className="heading mb-4">BRIDGE</div>

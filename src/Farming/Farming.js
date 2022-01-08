@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import './Farming.css';
 import { Button } from 'react-bootstrap';
 import myicon from '../icons/svg/icon/usdc.svg'
 
 function Farming(props) {
+    useEffect(() => {
+     document.title = "DCXA-FARMING";
+   }, []);
     const header = props.user.header;
     function importAll(r) {
         let images = {};

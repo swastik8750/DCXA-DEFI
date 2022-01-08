@@ -80,3 +80,13 @@ Link:active{
 .mnlink:hover{
   color: #f4f4f4;
 }
+
+.imgsizee{
+  height:40px;
+  border-radius:20px;
+  margin-bottom:4px;
+}
+
+.mbb{
+  margin-top:5px;
+}

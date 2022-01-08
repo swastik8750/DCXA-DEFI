@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import './Airdrop.css';
 
 function Airdrop() {
+    useEffect(() => {
+     document.title = "DCXA-AIRDROPS";
+   }, []);
     return (
         <>
             <h1 className='mt-5'><span className="yellow">ONGOING AIRDROPS</span></h1>
