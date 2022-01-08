@@ -1,23 +1,26 @@
 .my-body {
     margin: 0;
     overflow: hidden;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: 89vh;
     background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
     background-size: cover;
     backdrop-filter:  brightness(50%);
+    display: flex;
 }
 
 canvas {
     display: block;
+    margin: auto;
+    align-items: center;
 }
 
-#canvas_my_container {
-    width: 1000px;
-    height: 1000px;
-}
+/* #canvas_my_container {
 
-button {
+    
+} */
+
+/* button {
     position: absolute;
     bottom: 5%;
     left: 50%;
@@ -37,4 +40,4 @@ button {
 button:hover {
     background: #ffffff;
     color: #000000;
-}
+} */
