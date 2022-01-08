@@ -13,7 +13,7 @@
 }
 .lend_text
 {
-    font-size: 24px;
+    font-size: 3em;
     font-family: "Arial Black";
     padding-bottom: 24px;
     margin-bottom: 24px;
@@ -73,6 +73,9 @@ margin-bottom: 20px;
     font-weight: bolder;
     
     
+}
+.supply1{
+    line-height: 30px;
 }
 .lend_apy{
     background: linear-gradient(

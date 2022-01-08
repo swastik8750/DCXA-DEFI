@@ -17,6 +17,7 @@ import Farming from "./Farming/Farming"
 
 
 import Lend from "./Lend/Lend";
+import NFT from "./nft/NFT"
 
 const theme = createTheme({
   palette: {
@@ -145,6 +146,11 @@ function App() {
                   {Itemlist}
                 </React.Fragment>
               }
+            />
+             <Route
+              exact
+              path="/nft"
+              component={NFT}
             />
           </ThemeProvider>
         </SnackbarProvider>
