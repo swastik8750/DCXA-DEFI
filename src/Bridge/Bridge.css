@@ -1,5 +1,5 @@
 .green{
-    color: green;
+    color: magenta;
     font-size: smaller;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -12,16 +12,17 @@
     font-size: x-large;
     font-weight: bolder;
 }
-
 .send{
-    background-color: #2c3446;
+    background: linear-gradient(90deg, rgba(238, 58, 136, 0.8) 0%, rgba(54, 108, 244, 0.8) 100%);
     border: none;
     color: white;
-    padding: 6px;
+    padding: 7px;
     font-size: medium;
     right: 0;
 }
-
+.heading{
+    color:yellow;
+}
 .pr{display: flex !important;
     align-items: center;
     justify-content: center;
@@ -29,7 +30,7 @@
 .leftr{
     margin-right: 0px !important;
     position:absolute !important;
-    border: 2px solid #323c50;
+    border: 1px solid white;
 }
 @media screen and (max-width:728px){
 .pr{
