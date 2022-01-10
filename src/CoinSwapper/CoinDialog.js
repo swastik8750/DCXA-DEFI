@@ -125,55 +125,55 @@ export default function CoinDialog(props) {
 
   return (
     <Dialog
-      open={open}
-      onClose={() => exit(undefined)}
-      fullWidth
-      maxWidth="sm"
-      classes={{ paper: classes.dialogContainer }}
-    >
-      <DialogTitle onClose={() => exit(undefined)}>Select Coin</DialogTitle>
+    open={open}
+    onClose={() => exit(undefined)}
+    fullWidth
+    maxWidth="sm"
+    classes={{ paper: classes.dialogContainer }}
+  >
+    <DialogTitle onClose={() => exit(undefined)}>Select Coin</DialogTitle>
 
-      <hr className={classes.hr} />
+    <hr className={classes.hr} />
 
-      <div className={classes.coinContainer}>
-        <Grid container direction="column" spacing={1} alignContent="center">
-          <TextField
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-            variant="outlined"
-            placeholder="Paste Address"
-            error={error !== ""}
-            helperText={error}
-            fullWidth
-            className={classes.address}
-          />
+    <div className={classes.coinContainer}>
+      <Grid container direction="column" spacing={1} alignContent="center">
+        <TextField
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+          variant="outlined"
+          placeholder="Paste Address"
+          error={error !== ""}
+          helperText={error}
+          fullWidth
+          className={classes.address}
+        />
 
-          <hr className={classes.hr} />
+        <hr className={classes.hr} />
 
-          <Grid item className={classes.coinList}>
-            <Grid container direction="column">
-              {/* Maps all of the tokens in the constants file to buttons */}
-              {coins.map((coin, index) => (
-                <Grid item key={index} xs={12}>
-                  <CoinButton
-                    coinName={coin.name}
-                    coinAbbr={coin.abbr}
-                    onClick={() => exit(coin.address)}
-                  />
-                </Grid>
-              ))}
-            </Grid>
+        <Grid item className={classes.coinList}>
+          <Grid container direction="column">
+            {/* Maps all of the tokens in the constants file to buttons */}
+            {coins.map((coin, index) => (
+              <Grid item key={index} xs={12}>
+                <CoinButton
+                  coinName={coin.name}
+                  coinAbbr={coin.abbr}
+                  onClick={() => exit(coin.address)}
+                />
+              </Grid>
+            ))}
           </Grid>
         </Grid>
-      </div>
+      </Grid>
+    </div>
 
-      <hr className={classes.hr} />
+    <hr className={classes.hr} />
 
-      <DialogActions>
-        <Button autoFocus onClick={submit} color="primary">
-          Enter
-        </Button>
-      </DialogActions>
-    </Dialog>
+    <DialogActions>
+      <Button autoFocus onClick={submit} color="primary">
+        Enter
+      </Button>
+    </DialogActions>
+  </Dialog>
   );
 }

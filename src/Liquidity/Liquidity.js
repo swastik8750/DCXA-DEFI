@@ -45,17 +45,17 @@ function Liquidity() {
 
   return (
     <div>
-      <Container className="mt-5 mb-5">
-        <Paper className={classes.paperContainer}>
-          <Typography variant="h5" className={classes.title}>
-            <SwitchButton setDeploy={setDeploy} />
-          </Typography>
+    <Container className="mt-5 mb-5">
+      <Paper className={classes.paperContainer}>
+        <Typography variant="h5" className={classes.title}>
+          <SwitchButton setDeploy={setDeploy} />
+        </Typography>
 
-          {deploy_or_remove(deploy)}
-        </Paper>
-      </Container>
+        {deploy_or_remove(deploy)}
+      </Paper>
+    </Container>
 
-    </div>
+  </div>
   );
 }
 
