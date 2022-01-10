@@ -112,6 +112,7 @@ function App() {
               component={Home}
             />
             <Route
+
               path="/swap"
               component={CoinSwapper}
             />
@@ -120,6 +121,12 @@ function App() {
               path="/borrow_detailed"
 
               component={Borrow_Detailed}
+            />
+             <Route
+              exact
+              path="/"
+
+              component={Home}
             />
              <Route
               exact
