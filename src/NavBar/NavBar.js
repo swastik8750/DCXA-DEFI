@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import '../App.css';
 import './NavBar.css';
 import * as A from "react-bootstrap";
@@ -12,17 +12,17 @@ import {
 function NavBar() {
 
   function importAll(r) {
-        let images = {};
-        r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-        return images;
-    }
-    const images = importAll(require.context('../icons/svg/icon', false, /\.(png|jpe?g|svg)$/)); 
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+  }
+  const images = importAll(require.context('../icons/svg/icon', false, /\.(png|jpe?g|svg)$/));
 
-    var imagename = images['dcxa.png'].default;
+  var imagename = images['dcxxa.png'].default;
   return (
     <A.Navbar className="bgnavcolor" expand="lg" variant="dark">
       <A.Container>
-        <A.Navbar.Brand className="mbb"><Link className="mnlink" to="/"><img className="imgsizee" src={imagename}/> CXa</Link></A.Navbar.Brand>
+        <A.Navbar.Brand className="mbb"><Link className="mnlink" to="/"><span className="bgwhite"><img className="imgsizee" src={imagename} /></span></Link></A.Navbar.Brand>
         <A.Navbar.Toggle aria-controls="basic-A.Navbar-A.Nav" />
         <A.Navbar.Collapse id="basic-A.Navbar-A.Nav">
           <A.Nav className="me-auto">
@@ -33,13 +33,13 @@ function NavBar() {
               <A.NavDropdown.Item className="mt-2"><Link className="me-auto link" to="/Bridge">Bridge</Link></A.NavDropdown.Item>
             </A.NavDropdown>
             <A.Nav.Link className="m-2"><Link className="mnlink" to="/Farming">Farm</Link></A.Nav.Link>
-            <A.Nav.Link  className="m-2"><Link className="mnlink" to="/lend">Lending</Link></A.Nav.Link>
+            <A.Nav.Link className="m-2"><Link className="mnlink" to="/lend">Lending</Link></A.Nav.Link>
             <A.Nav.Link className="m-2"><Link className="mnlink" to="/borrow">Borrow</Link></A.Nav.Link>
             <A.Nav.Link className="m-2"><Link className="mnlink" to="/Airdrop">Airdrops</Link></A.Nav.Link>
             <A.Nav.Link className="m-2" ><Link className="mnlink" to="/NFT">NFTs</Link></A.Nav.Link>
-            
+
           </A.Nav>
-          
+
         </A.Navbar.Collapse>
       </A.Container>
 

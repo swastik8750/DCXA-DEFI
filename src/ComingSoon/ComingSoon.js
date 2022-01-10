@@ -15,6 +15,8 @@ export default function ComingSoon(props) {
     return (
       <>
         <A.Modal
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
         show={show}
         onHide={handleClose}
         backdrop="static"
