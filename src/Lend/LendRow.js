@@ -1,8 +1,16 @@
 import React from "react";
 import {BiBarChart} from "react-icons/bi";
+import ComingSoon from '../ComingSoon/ComingSoon';
+import {useState} from 'react';
 export default function LendRow(props) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
   return (
     <div className="lend_main_containerr ">
+          <ComingSoon show={show} handleClose={handleClose} handleShow={handleShow} />
       <div className="lend_row ">{props.user.pool}</div>
       <div className="lend_row lend_apy">{props.user.APY}</div>
       <div className="lend_row total_supply">
@@ -16,8 +24,8 @@ export default function LendRow(props) {
       <div className="lend_row">{props.user.utilization}</div>
       <div className="lend_row">{props.user.APY_14}</div>
       <div className="lend_row lend_button">
-          <button className="btn_submit whiter">Submit</button>
-          <button className="btn_stats whiter">
+          <button onClick={handleShow} className="btn_submit whiter">Submit</button>
+          <button onClick={handleShow} className="btn_stats whiter">
             <BiBarChart/>
           </button>
       </div>
