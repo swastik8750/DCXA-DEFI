@@ -8,6 +8,9 @@ import { TextField } from '@mui/material';
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from '@mui/material';
 import { grey } from '@mui/material/colors';
+import ComingSoon from '../ComingSoon/ComingSoon';
+import {useState} from 'react';
+
 const useStyles = makeStyles({
     root: {
     "& .MuiOutlinedInput-root" :{
@@ -26,12 +29,19 @@ const useStyles = makeStyles({
   });
 
 export default function Bridge() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     const classes = useStyles();
     return (
         <Paper className="mt-5 container_bridge mb-4" sx={{ pt: 10, pb: 10, pl: 2, pr: 2, margin: 'auto', maxWidth: 750, color:'White',backgroundColor:'rgba(0, 0, 0, 0.4)',boxShadow:2 }}>
+            
             <div className="heading mb-4">BRIDGE</div>
             <Grid container spacing={6} className="pb-3 pr pt-3">
                 <Grid item className="mt-4">
+                <ComingSoon show={show} handleClose={handleClose} handleShow={handleShow} />
                     <Typography className="big" gutterBottom variant="title1" component="div">
                         POA NETWORK
                         <Typography className="balance mt-2 mb-2">
@@ -42,7 +52,7 @@ export default function Bridge() {
                 </Grid>
                 <Grid item className="mt-4 ">
                     <Typography gutterBottom variant="subtitle1" component="div" >
-                        <TextField className={classes.root} sx={{width:200}} size="small" label="Amount"  InputLabelProps={{style:{color: 'white'},}}  variant="outlined" placeholder='0' InputProps={{ endAdornment: <button className="send leftr">Transfer</button> }} />
+                        <TextField className={classes.root} sx={{width:200}} size="small" label="Amount"  InputLabelProps={{style:{color: 'white'},}}  variant="outlined" placeholder='0' InputProps={{ endAdornment: <button onClick={handleShow} className="send leftr">Transfer</button> }} />
                     </Typography>
                 </Grid>
                 <Grid item className="mt-4">
