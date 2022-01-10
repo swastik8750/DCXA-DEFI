@@ -255,9 +255,7 @@ function CoinSwapper(props) {
       setField2Value("");
     } else if (parseFloat(field1Value) && coin1.address && coin2.address) {
       getAmountOut(coin1.address, coin2.address, field1Value, router, signer).then(
-        (amount)=>console.log(amount)
-        // (amount) => setField2Value((amount).toFixed(7))
-        
+        (amount) => setField2Value(amount.toFixed(7))
       );
     } else {
       setField2Value("");
@@ -326,6 +324,7 @@ function CoinSwapper(props) {
         setRouter(router);
         // Get Weth address from router
         await router.WETH().then((wethAddress) => {
+          console.log('Weth: ', wethAddress);
           setWeth(getWeth (wethAddress, signer));
           // Set the value of the weth address in the default coins array
           const coins = COINS.get(chainId);
