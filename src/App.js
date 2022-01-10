@@ -13,7 +13,7 @@ import Borrow_Detailed from "./Borrow/Borrow_Detailed";
 import Airdrop from "./Airdrop/Airdrop";
 import Home from "./Home/Home";
 import Farming from "./Farming/Farming";
-
+import ComingSoon from "./ComingSoon/ComingSoon"
 import Lend from "./Lend/Lend";
 import NFT from "./nft/NFT";
 
@@ -111,6 +111,7 @@ function App() {
 
           <Route path="/Bridge" component={Bridge} />
           <Route path="/Airdrop" component={Airdrop} />
+          <Route path="/coming_soon" component={ComingSoon} />
           <Route
             path="/Farming"
             render={() => <React.Fragment>{Itemlist}</React.Fragment>}

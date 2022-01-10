@@ -1,9 +1,16 @@
 import React, { useEffect} from 'react';
 import './Farming.css';
 import { Button } from 'react-bootstrap';
+import ComingSoon from '../ComingSoon/ComingSoon'
 import myicon from '../icons/svg/icon/usdc.svg'
+import {useState} from 'react';
 
 function Farming(props) {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     useEffect(() => {
      document.title = "DCXA-FARMING";
    }, []);
@@ -52,6 +59,7 @@ function Farming(props) {
     if (!header) {
         content =
             <div className="cont">
+                <ComingSoon show={show} handleClose={handleClose} handleShow={handleShow} />
                 <div className="first according">
                     <div className='p-2 white'>
                         <div className='imgsize'>
@@ -83,7 +91,7 @@ function Farming(props) {
                     <div className='p-2 whiter center'>Daily APR : {props.user.daily_apr}</div>
                 </div>
                 <div className="fourth according">
-                    <button className="farm">Farm</button>
+                    <button className="farm" onClick={handleShow}>Farm</button>
                 </div>
             </div>
     }
