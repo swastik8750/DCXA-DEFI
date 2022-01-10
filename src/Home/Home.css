@@ -1,24 +1,21 @@
 .my-body {
-    margin: 0;
-    overflow: hidden;
-    width: auto;
-    height: 89vh;
-    background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
+    width: 100%;
+    height: 90%;
+    background-image: url("images/background.jpg");
     background-size: cover;
     backdrop-filter:  brightness(50%);
-    display: flex;
 }
 
 canvas {
-    display: block;
-    margin: auto;
-    align-items: center;
+    overflow-y: hidden;
+    width: 100% !important;
+    height: 100% !important;
 }
 
-/* #canvas_my_container {
+#canvas_my_container {
+width: 100vw;
 
-    
-} */
+}
 
 /* button {
     position: absolute;

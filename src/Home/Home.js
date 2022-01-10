@@ -25,7 +25,7 @@ export default function Home() {
         blobScale = 3;
         function init() {
             scene = new THREE.Scene();
-            camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.01, 1000)
+            camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.02, 1000)
             camera.position.set(0,0,230);
             const directionalLight = new THREE.DirectionalLight("#fff", 2);
             directionalLight.position.set(0, 50, -20);
@@ -62,7 +62,7 @@ const texture4 = loader.load("https://i.ibb.co/yWfKkHh/p4-avirap.png");
 
 /*  Nucleus  */   
 texturenucleus.anisotropy = 16;
-let icosahedronGeometry = new THREE.IcosahedronGeometry(30, 10);
+let icosahedronGeometry = new THREE.IcosahedronGeometry(40, 10);
 let lambertMaterial = new THREE.MeshPhongMaterial({ map: texturenucleus });
 nucleus = new THREE.Mesh(icosahedronGeometry, lambertMaterial);
 scene.add(nucleus);
@@ -70,7 +70,7 @@ scene.add(nucleus);
 
 /*    Sphere  Background   */
 textureSphereBg.anisotropy = 16;
-let geometrySphereBg = new THREE.SphereBufferGeometry(150, 40, 40);
+let geometrySphereBg = new THREE.SphereBufferGeometry(Math.max(renderer.domElement.width,renderer.domElement.height),50,50);
 let materialSphereBg = new THREE.MeshBasicMaterial({
     side: THREE.BackSide,
     map: textureSphereBg,

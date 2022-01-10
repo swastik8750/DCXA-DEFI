@@ -107,6 +107,7 @@ function App() {
           <ThemeProvider theme={theme}>
             <NarBar />
             <Route
+            exact
               path="/"
               component={Home}
             />
