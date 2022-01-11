@@ -30,6 +30,7 @@
     "react-scripts": "4.0.3",
     "react-three-fiber": "^6.0.13",
     "remark-gfm": "^1.0.0",
+    "semantic-ui-react": "^2.0.4",
     "simplex-noise": "^3.0.1",
     "three": "^0.124.0",
     "three-orbitcontrols": "^2.110.3",
