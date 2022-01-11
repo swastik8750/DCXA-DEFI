@@ -14,16 +14,16 @@ import {useState} from 'react';
 const useStyles = makeStyles({
     root: {
     "& .MuiOutlinedInput-root" :{
-            color:"white"
+            color:"black"
         },
       "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
-        borderColor: "white",
+        borderColor: "black",
       },
       "&:hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
-        borderColor: "white",
+        borderColor: "black",
       },
       "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-        borderColor: "white",
+        borderColor: "black",
       }
     }
   });
@@ -36,7 +36,7 @@ export default function Bridge() {
 
     const classes = useStyles();
     return (
-        <Paper className="mt-5 container_bridge mb-4" sx={{ pt: 10, pb: 10, pl: 2, pr: 2, margin: 'auto', maxWidth: 750, color:'White',backgroundColor:'rgba(0, 0, 0, 0.4)',boxShadow:2 }}>
+        <Paper className="mt-5 container_bridge mb-4" sx={{ pt: 10, pb: 10, pl: 2, pr: 2, margin: 'auto', maxWidth: 750, color:'black',backgroundColor:'#F8F8F8',boxShadow:9 }}>
             
             <div className="heading mb-4">BRIDGE</div>
             <Grid container spacing={6} className="pb-3 pr pt-3">
@@ -52,7 +52,7 @@ export default function Bridge() {
                 </Grid>
                 <Grid item className="mt-4 ">
                     <Typography gutterBottom variant="subtitle1" component="div" >
-                        <TextField className={classes.root} sx={{width:200}} size="small" label="Amount"  InputLabelProps={{style:{color: 'white'},}}  variant="outlined" placeholder='0' InputProps={{ endAdornment: <button onClick={handleShow} className="send leftr">Transfer</button> }} />
+                        <TextField className={classes.root} sx={{width:200}} size="small" label="Amount"  InputLabelProps={{style:{color: 'black'},}}  variant="outlined" placeholder='0' InputProps={{ endAdornment: <button onClick={handleShow} className="send leftr">Transfer</button> }} />
                     </Typography>
                 </Grid>
                 <Grid item className="mt-4">

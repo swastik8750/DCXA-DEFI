@@ -62,7 +62,7 @@ function Farming(props) {
                 <ComingSoon show={show} handleClose={handleClose} handleShow={handleShow} />
                 <div className="first according">
                     <div className='p-2 white'>
-                        <div className='imgsize'>
+                        <div className='imgsize black'>
                             <img className="img" src={image_name1} />
                             <img className='img negmarginleft' src={image_name2} />
                             <span>{props.user.name}</span></div>
@@ -73,22 +73,22 @@ function Farming(props) {
                         <button className="according second-btn m-1"> DOUBLE TIP</button>
 
                     </div>
-                    <div className='p-2 linkk'>
-                        <a href='#'>Oracle Double Tip</a>
+                    <div className='p-2 linkk black'>
+                        <a href='#' className='black'>Oracle Double Tip</a>
                     </div>
-                    <div className='p-2 whiter'>
+                    <div className='p-2 cll'>
                         TVL &nbsp;&nbsp;{props.user.tvl}
                     </div>
                 </div>
                 <div className="second center according">
-                    <div className='m-2'><p className='hint design'>{props.user.new}</p></div>
-                    <div><strike className="whiter">{props.user.previous}</strike></div>
+                    <div className='m-2'><p className='hint okk'>{props.user.new}</p></div>
+                    <div><strike className="adf">{props.user.previous}</strike></div>
                 </div>
                 <div className="third center according">
-                    <div className='p-2 whiter center'>Yield Farming : {props.user.yield}</div>
-                    <div className='p-2 whiter center'>Trading Fee Income : {props.user.trading_fee_income}</div>
-                    <div className='p-2 whiter center'>Total APR : {props.user.total_apr}</div>
-                    <div className='p-2 whiter center'>Daily APR : {props.user.daily_apr}</div>
+                    <div className='p-2 cll center'>Yield Farming : {props.user.yield}</div>
+                    <div className='p-2 cll center'>Trading Fee Income : {props.user.trading_fee_income}</div>
+                    <div className='p-2 cll center'>Total APR : {props.user.total_apr}</div>
+                    <div className='p-2 cll center'>Daily APR : {props.user.daily_apr}</div>
                 </div>
                 <div className="fourth according">
                     <button className="farm" onClick={handleShow}>Farm</button>
@@ -97,7 +97,7 @@ function Farming(props) {
     }
     else {
         content =
-            <div className="cont yellow change">
+            <div className="cont cl change">
                 <div className="first according bigger">
                     STRATEGY
                 </div>
