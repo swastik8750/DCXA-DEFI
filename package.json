@@ -15,6 +15,8 @@
     "@testing-library/user-event": "^12.1.10",
     "bignumber": "^1.1.0",
     "bootstrap": "^5.0.1",
+    "dat": "^13.13.1",
+    "dat.gui": "^0.7.7",
     "ethers": "^5.4.1",
     "gh-pages": "^3.2.3",
     "notistack": "^1.0.10",
