@@ -102,7 +102,7 @@ function App() {
       <SnackbarProvider maxSnack={3}>
         <ThemeProvider theme={theme}>
           <NarBar />
-          {/* <Route exact path="/" component={Home} /> */}
+          <Route exact path="/" component={Home} /> 
           <Route path="/swap" component={CoinSwapper} />
           <Route exact path="/borrow_detailed" component={Borrow_Detailed} />
           <Route exact path="/borrow" component={Borrow} />
