@@ -36,7 +36,7 @@
  .blue { color: #185875; }
  
  .yellow { 
-     color: #FFF842; 
+     color: #ABE1F8; 
     }
  
  .containerr th h1 {
@@ -60,9 +60,9 @@
    padding: 0 0 8em 0;
    margin-top: 30px;
    border-radius: 20px;
-   background: rgba(0,0,0,.4);
+   background: #F8F8F8;
    border: 1px solid rgba(255,255,255,.2);
-   box-shadow: 2px 2px 8px rgba(255,255,255,.1);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
  
  .containerr td, .containerr th {
@@ -78,10 +78,10 @@
  
  .containerr td:first-child { color: #FB667A; }
  .containerr tbody tr:hover {
-    background-color: #FFF842;
+    background-color: #E6F1F0;
        font-weight: bold;
       color: #000;
-   box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+   box-shadow: #E6F1F0 -1px 1px, #E6F1F0 -2px 2px, #E6F1F0 -3px 3px, #E6F1F0 -4px 4px, #E6F1F0 -5px 5px, #E6F1F0 -6px 6px;
    transform: translate3d(6px, -6px, 0);
    
    transition-delay: 0s;

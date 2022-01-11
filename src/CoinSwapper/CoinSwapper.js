@@ -35,6 +35,7 @@ const styles = (theme) => ({
     borderRadius: theme.spacing(2),
     padding: theme.spacing(1),
     paddingBottom: theme.spacing(3),
+    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
   },
   switchButton: {
     zIndex: 1,
