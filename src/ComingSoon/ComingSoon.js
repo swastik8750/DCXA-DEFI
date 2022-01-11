@@ -7,9 +7,8 @@ const useStyles=makeStyles({
     marginLeft:"25%",
   },
   root1:{
-    marginLeft:"25%",
+    marginLeft:"22%",
     height:"200px",
-   
     width:"275px"
   }
 });
