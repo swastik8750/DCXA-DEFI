@@ -3,18 +3,18 @@ import Button from 'react-bootstrap/Button';
 // import {useState} from 'react';
 
 export default function ComingSoon(props) {
-    // const [show, setShow] = useState(false);
-  
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
-    
-    const show = props.show;
-    const handleClose = props.handleClose;
-    const handleShow = props.handleShow;
+  // const [show, setShow] = useState(false);
 
-    return (
-      <>
-        <A.Modal
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
+  const show = props.show;
+  const handleClose = props.handleClose;
+  const handleShow = props.handleShow;
+
+  return (
+    <>
+      <A.Modal
         aria-labelledby="contained-modal-title-vcenter"
         centered
         show={show}
@@ -23,10 +23,10 @@ export default function ComingSoon(props) {
         keyboard={false}
       >
         <A.Modal.Header closeButton>
-          <A.Modal.Title>COMING SOON</A.Modal.Title>
+          <A.Modal.Title centered>COMING SOON</A.Modal.Title>
         </A.Modal.Header>
         <A.Modal.Body>
-         This Feature is coming soon ...
+          This Feature is coming soon ...
         </A.Modal.Body>
         <A.Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -34,7 +34,7 @@ export default function ComingSoon(props) {
           </Button>
         </A.Modal.Footer>
       </A.Modal>
-      </>
-    );
-  }
-  
+    </>
+  );
+}
+

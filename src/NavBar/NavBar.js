@@ -8,6 +8,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import Iconn from "./Iconn";
 
 function NavBar() {
 
@@ -22,10 +23,10 @@ function NavBar() {
   return (
     <A.Navbar className="bgnavcolor" expand="lg" variant="dark">
       <A.Container>
-        <A.Navbar.Brand className="mbb"><Link className="mnlink" to="/"><span className="bgwhite"><img className="imgsizee" src={imagename} /></span></Link></A.Navbar.Brand>
+        <A.Navbar.Brand><Link to="/"><Iconn/></Link></A.Navbar.Brand>
         <A.Navbar.Toggle aria-controls="basic-A.Navbar-A.Nav" />
         <A.Navbar.Collapse id="basic-A.Navbar-A.Nav">
-          <A.Nav className="me-auto">
+          <A.Nav className="me-auto abcd">
             {/* <A.Nav.Link href="/trade" className="m-2">Trade</A.Nav.Link> */}
             <A.NavDropdown title="Swap" className="m-2 mainlink" id="basic-A.Nav-dropdown">
               <A.NavDropdown.Item className="mt-2"><Link className="me-auto link" to="/swap">Swap</Link></A.NavDropdown.Item>
