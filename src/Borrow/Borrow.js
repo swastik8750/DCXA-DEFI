@@ -13,7 +13,7 @@ function Borrow() {
     return (
         <>
         <ComingSoon show={show} handleClose={handleClose} handleShow={handleShow} />
-            <h1 className='mt-5'><span className="yellow">BORROW</span></h1>
+            <h1 className='mt-5'><span className="cl">BORROW</span></h1>
             <table className="containerr">
                 <thead>
                     <tr >

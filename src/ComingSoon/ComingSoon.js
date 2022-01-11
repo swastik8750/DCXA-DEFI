@@ -1,7 +1,18 @@
 import * as A from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
+import { makeStyles } from "@material-ui/core/styles";
 // import {useState} from 'react';
-
+const useStyles=makeStyles({
+  root:{
+    marginLeft:"25%",
+  },
+  root1:{
+    marginLeft:"25%",
+    height:"200px",
+   
+    width:"275px"
+  }
+});
 export default function ComingSoon(props) {
   // const [show, setShow] = useState(false);
 
@@ -11,9 +22,10 @@ export default function ComingSoon(props) {
   const show = props.show;
   const handleClose = props.handleClose;
   const handleShow = props.handleShow;
-
+  const classes=useStyles();
   return (
     <>
+
       <A.Modal
         aria-labelledby="contained-modal-title-vcenter"
         centered
@@ -23,13 +35,13 @@ export default function ComingSoon(props) {
         keyboard={false}
       >
         <A.Modal.Header closeButton>
-          <A.Modal.Title centered>COMING SOON</A.Modal.Title>
+          <h1 className={classes.root}>COMING SOON</h1>
         </A.Modal.Header>
         <A.Modal.Body>
-          This Feature is coming soon ...
+          <A.Image className={classes.root1} src={"https://i.postimg.cc/R0bHCxhr/image-removebg-preview.png"}/>
         </A.Modal.Body>
         <A.Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleClose}>
             Close
           </Button>
         </A.Modal.Footer>
@@ -37,4 +49,3 @@ export default function ComingSoon(props) {
     </>
   );
 }
-

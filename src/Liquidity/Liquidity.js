@@ -13,11 +13,12 @@ import LiquidityRemover from "./RemoveLiquidity";
 
 const styles = (theme) => ({
   paperContainer: {
-    borderRadius: theme.spacing(2),
+    borderRadius: theme.spacing(4),
     padding: theme.spacing(1),
     paddingBottom: theme.spacing(3),
     maxWidth: 700,
     margin: "auto",
+    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
   },
   title: {
     textAlign: "center",

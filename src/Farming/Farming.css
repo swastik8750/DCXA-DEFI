@@ -11,9 +11,9 @@
     padding: 1.4%;
 
     border-radius: 20px;
-    background: rgba(0,0,0,.4);
+    background: #F8F8F8;
     border: 1px solid rgba(255,255,255,.2);
-    box-shadow: 2px 2px 8px rgba(255,255,255,.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .first{
@@ -102,7 +102,7 @@
 }
 
 .farm{
-    background: linear-gradient(90deg, rgba(238, 58, 136, 0.8) 0%, rgba(54, 108, 244, 0.8) 100%);
+    background: linear-gradient(90deg, rgba(209, 23, 231, 1) 0%, rgba(50, 102, 211, 1) 100%);
     width: fit-content;
     padding: 5%;
     padding-left: 12%;
@@ -126,7 +126,13 @@
 .yellow{
     color:yellow;
 }
-
+.cl{
+    color:#01A1FE;
+    font-weight: bolder;
+}
+.cll{
+    color: #313044;
+}
 .change{
     font-family: 'Trebuchet MS';
 }
@@ -142,4 +148,14 @@
     height: 25px;
     width: 25px;
     border-radius: 12.5px;
+}
+.okk{
+    color:#3266D3;
+}
+.adf{
+    color:#D117E7;
+}
+
+.black{
+    color:black !important;
 }
