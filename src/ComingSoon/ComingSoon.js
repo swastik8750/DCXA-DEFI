@@ -1,6 +1,7 @@
 import * as A from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import { makeStyles } from "@material-ui/core/styles";
+import comingsoon from '../ComingSoon/comingsoon.png';
 // import {useState} from 'react';
 const useStyles=makeStyles({
   root:{
@@ -38,7 +39,7 @@ export default function ComingSoon(props) {
           <h1 className={classes.root}>COMING SOON</h1>
         </A.Modal.Header>
         <A.Modal.Body>
-          <A.Image className={classes.root1} src={"https://i.postimg.cc/R0bHCxhr/image-removebg-preview.png"}/>
+         <A.Image className={classes.root1} src={comingsoon}/>
         </A.Modal.Body>
         <A.Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
