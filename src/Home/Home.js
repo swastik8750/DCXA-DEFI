@@ -17,7 +17,7 @@ return (
             <h1 id="headline">DCXA FINANCE</h1>
             <img src="https://dcxa.io/sliders/1636222743.png"/>
         </div>
-        <div id="abc">
+        <div className='abc'>
         <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
         <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
         <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>

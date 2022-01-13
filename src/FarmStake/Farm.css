@@ -1,10 +1,9 @@
 .farm_main_container{
 display:flex;
 margin: auto;
-margin-left: 16%;
 margin-top: 25px;
 gap: 20px;
-width: 66%;
+width: 72%;
 grid-template-columns: repeat(2, 1fr);
 
 padding: 10px;
