@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function Home() {           
 return (
-    <body id="body">
+    <div>
         <div className="ontop">
             <h1 id="headline">DCXA FINANCE</h1>
         </div>
@@ -15,7 +15,6 @@ return (
         <div className="xyz" id="staking"></div>
         <div className="xyz" id="ifo"></div>
         </div>
-</body>
-
+    </div>
     )
 }
