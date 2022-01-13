@@ -3,6 +3,7 @@ import React from 'react';
 import * as THREE from 'three';
 import { useEffect } from 'react';
 import { FaWallet } from 'react-icons/fa';
+import { FcNeutralTrading,FcDeployment,FcLandscape,FcBusiness,FcFilingCabinet } from 'react-icons/fc';
 
 export default function Home() {           
 return (
@@ -12,10 +13,10 @@ return (
             <img src="https://dcxa.io/sliders/1636222743.png"/>
         </div>
         <div id="abc">
-        <div className="xyz" id="trade">Trade</div>
-        <div className="xyz" id="farming">Farming</div>
-        <div className="xyz" id="staking">Staking</div>
-        <div className="xyz" id="ifo">IFO</div>
+        <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
+        <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
+        <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
+        <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
         </div>
         <div className="unlockwallet">
                 <div className="wltone">
