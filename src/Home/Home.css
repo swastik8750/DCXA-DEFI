@@ -65,13 +65,14 @@ width: 80%;
 #ifo{
     background-color: rgb(64, 64, 64);
 }
+
 .unlockwallet{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 50%;
+    width: 70%;
     margin-bottom: 3%;
     margin-top: 3%;
     border: 1px solid rgba(255,255,255,.2);
@@ -80,14 +81,45 @@ width: 80%;
     background: #F8F8F8;
 }
 .wltone{
-    padding:3%;
+    padding:5%;
 }
 .wlttwo{
-    padding: 3%;
+    padding: 5%;
 }
 
 .height{
-    height: 200px;
-    width:  200px;
+    height: 30vmin;
+    width:  36vmin;
     color:#f7a816;
+}
+
+.mybtn{
+    background: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 70px;
+    padding:2%;
+    border-color: orange;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.mybtn:hover{
+    background: orange;
+    color: white;
+}
+.orange{
+    color:orange;
+}
+
+.biggerr{
+    font-size: 27px;
+}
+
+.green{
+    color: green;
+}
+.newicon{
+    height: 40vmin;
+    width:  22vmin;
+    color:orange
 }
