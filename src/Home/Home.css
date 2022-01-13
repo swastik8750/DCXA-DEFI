@@ -9,15 +9,59 @@
 }
 #headline{
     font-size:70px;
-    text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    font-family: GilroyMedium;
     font-size: 64px;
     font-weight: 700;
     color: rgb(25, 123, 189);
     margin-bottom: -3%;
     text-align: center;
 }
-.abc{
+
+.ico-ani3
+{
+    position: absolute;
+    top:210px;
+    left:33vw;
+    width: 18%;
+    transform: translateX(-1%);
+    transform: translateY(-1%);
+    transition: 1s linear infinite;
+    animation: icoscale 1s infinite alternate
+}
+@keyframes icomoving {
+    0% {
+        transform: translate(0px, 0px)
+    }
+
+    100% {
+        transform: translate(20px, 20px)
+    }
+}
+
+@keyframes icoscale {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.97)
+    }
+}
+.ico-ani1
+{
+    position: absolute;
+    top:210px;
+    left: 25vw;
+    width: 50%;
+    animation: icoscale 1s infinite alternate
+}
+#content{
+    position: absolute;
+    top:800px;
+    width: 100%;
+}
+#abc{
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -25,7 +69,6 @@
     margin: auto;
     width: 70%;
     margin-bottom: 3%;
-    margin-top: 3%;
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 20px;
 
@@ -102,13 +145,13 @@
 .mybtn{
     background: none;
     border-radius: 10px;
-    width: 300px;
+    width: 60%;
     height: 70px;
     padding:2%;
     border-color: orange;
     font-weight: bolder;
     border: 2px solid white;
-    font-size: 25px;
+    font-size: 2vw;
 }
 .mybtn:hover{
     background: white;
@@ -119,7 +162,7 @@
 }
 
 .biggerr{
-    font-size: 27px;
+    font-size: 2vw;
 }
 
 .green{

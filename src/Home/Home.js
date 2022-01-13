@@ -5,26 +5,28 @@ import { useEffect } from 'react';
 import { FaWallet } from 'react-icons/fa';
 
 import { FaUnlock } from 'react-icons/fa';
-import { ImStatsBars } from 'react-icons/im';
+import {ImStatsBars} from 'react-icons/im';
 import FadeIn from 'react-fade-in';
-import { FcNeutralTrading, FcDeployment, FcLandscape, FcBusiness, FcFilingCabinet } from 'react-icons/fc';
+import { FcNeutralTrading,FcDeployment,FcLandscape,FcBusiness,FcFilingCabinet } from 'react-icons/fc';
 import Farm from '../FarmStake/Farm';
 
-export default function Home() {
-    return (
-        <div>
-            <div className="ontop">
-                <h1 id="headline">DCXA FINANCE</h1>
-                <img src="https://dcxa.io/sliders/1636222743.png" />
-            </div>
-            <div className='abc'>
-                <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
-                <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
-                <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
-                <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
-            </div>
-            <Farm />
-            <FadeIn delay="700">
+export default function Home() {           
+return (
+    <div>
+        <h1 id="headline">DCXA FINANCE</h1>
+        <div class="ico">
+            <img class="ico-ani1" src="https://dcxa.io/token\1636798191.png" />
+            <img class="ico-ani3" src="https://dcxa.io/token\1636798145.png" />
+        </div>
+    <div id="content">
+        <div id="abc">
+        <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
+        <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
+        <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
+        <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
+        </div>
+        <Farm/>
+        <FadeIn delay="700">
                 <div className="unlockwallet bkch">
                     <div className="wltone">
                         <FaWallet className='height' />
@@ -55,6 +57,7 @@ export default function Home() {
                     </div>
                 </div>
             </FadeIn>
+            </div>
         </div>
     )
 }
