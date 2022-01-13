@@ -24,6 +24,7 @@ return (
         <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
         </div>
         <Farm/>
+    <FadeIn delay="700">
         <div className="unlockwallet">
                 <div className="wltone">
                     <FaWallet className='height' />
