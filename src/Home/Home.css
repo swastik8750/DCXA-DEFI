@@ -1,12 +1,13 @@
 
 .ontop{
-    background-image: url("https://dcxa.io/sliders/1636222743.png");
-    width: 100%;
+    background-image: url("https://dcxa.io/sliders/1636222743.png"); 
+    margin: 0% 10% 0% 10%;
+    width: 80%;
+    background-size: cover;
     height: 100%;
     position:absolute;
     top:100px;
-    padding-top: 150px;
-    opacity:0.6;
+    padding-top: 40px;
     border-radius: 8px;
 }
 #headline{
