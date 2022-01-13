@@ -1,40 +1,35 @@
-.my-body {
+
+.ontop{
+    background-image: url("https://dcxa.io/sliders/1636222743.png");
     width: 100%;
-    height: 90%;
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    backdrop-filter:  brightness(50%);
+    height: 100%;
+    position:absolute;
+    top:100px;
+    padding-top: 150px;
+    opacity:0.6;
+    border-radius: 8px;
 }
-
-canvas {
-    overflow-y: hidden;
-    width: 100% !important;
-    height: 100% !important;
+#headline{
+    font-size:70px;
 }
-
-#canvas_my_container {
-width: 100vw;
-
+.xyz{
+    background-color: black;
+    width: 180px;
+    height: 220px;
+    position:absolute;
+    top:750px;
+    opacity:0.5;
+    border-radius: 8px;
 }
-
-/* button {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.9em;
-    background: #000000;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all .3s;
+#trade{
+    left:200px;
 }
-
-button:hover {
-    background: #ffffff;
-    color: #000000;
-} */
+#farming{
+    left:450px;
+}
+#staking{
+    left:700px;
+}
+#ifo{
+    left:950px;
+}
