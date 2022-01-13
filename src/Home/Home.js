@@ -44,7 +44,7 @@ export default function Home() {
                     </div>
                     <div className="wltone bolderr">
                         <div className='cl mb-4 biggerr'><b>DCXa STATS</b></div>
-                        <div className='mb-3 bigger'>Total DCXa Suplly <span className='green mll'><b>11,223,345</b></span></div>
+                        <div className='mb-3 bigger'>Total DCXa Supply <span className='green mll'><b>11,223,345</b></span></div>
                         <div className='mb-3 bigger'>Total DCXa Burned <span className='green mll'><b>0.000</b></span></div>
                         <div className='bigger'>New DCXa/Block <span className='green mll'><b>3</b></span></div>
                     </div>
