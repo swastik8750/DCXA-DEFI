@@ -23,7 +23,6 @@ export async function getNetwork(provider) {
 export function getRouter(address, signer) {
   return new Contract(address, ROUTER.abi, signer);
 }
-
 export async function checkNetwork(provider) {
   const chainId = getNetwork(provider);
   if (chains.networks.includes(chainId)){
@@ -31,20 +30,16 @@ export async function checkNetwork(provider) {
   }
   return false;
 }
-
 export function getWeth(address, signer) {
   return new Contract(address, ERC20.abi, signer);
 }
-
 export function getFactory(address, signer) {
   return new Contract(address, FACTORY.abi, signer);
 }
-
 export async function getAccount() {
   const accounts = await window.ethereum.request({
     method: "eth_requestAccounts",
   });
-
   return accounts[0];
 }
 
@@ -86,7 +81,6 @@ export async function getBalanceAndSymbol(
   try {
     if (address === weth_address) {
       const balanceRaw = await provider.getBalance(accountAddress);
-
       return {
         balance: ethers.utils.formatEther(balanceRaw),
         symbol: coins[0].abbr,

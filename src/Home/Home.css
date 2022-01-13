@@ -1,42 +1,183 @@
 
-.ontop{
-    background-image: url("https://dcxa.io/sliders/1636222743.png"); 
-    margin: 0% 10% 0% 10%;
+.ontop{ 
+    margin: auto;
     width: 80%;
     background-size: cover;
     height: 100%;
-    position:absolute;
-    top:100px;
     padding-top: 40px;
     border-radius: 8px;
 }
 #headline{
     font-size:70px;
+    margin-top: 40px;
+    font-family: GilroyMedium;
+    font-size: 64px;
+    font-weight: 700;
+    color: rgb(25, 123, 189);
+    margin-bottom: -3%;
+    text-align: center;
 }
+
+.ico-ani3
+{
+    position: absolute;
+    top:210px;
+    left:33vw;
+    width: 18%;
+    transform: translateX(-1%);
+    transform: translateY(-1%);
+    transition: 1s linear infinite;
+    animation: icoscale 1s infinite alternate
+}
+@keyframes icomoving {
+    0% {
+        transform: translate(0px, 0px)
+    }
+
+    100% {
+        transform: translate(20px, 20px)
+    }
+}
+
+@keyframes icoscale {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.97)
+    }
+}
+.ico-ani1
+{
+    position: absolute;
+    top:210px;
+    left: 25vw;
+    width: 50%;
+    animation: icoscale 1s infinite alternate
+}
+#content{
+    position: absolute;
+    top:800px;
+    width: 100%;
+}
+#abc{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 3%;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+
+}
+
 .xyz{
-    width: 180px;
-    height: 220px;
-    position:absolute;
-    top:750px;
-    border-radius: 8px;
+    width: 225px;
+    height: 250px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    border: 1px solid rgba(255,255,255,.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+#color{
+    color: white;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(2, 2, 2, 0.35) 0px 5px 15px;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    width: 60%;
+    height: 60%;
+}
+#color:hover{
+    margin-top:-30%;
 }
 #trade{
-    left:200px;
     background-color: rgb(25, 123, 189);
 }
-.random{
-    top:1600px;
-    height:100px;
-}
 #farming{
-    left:450px;
     background-color: rgb(17, 163, 115);
 }
 #staking{
-    left:700px;
     background-color: rgb(247, 147, 26);
 }
 #ifo{
-    left:950px;
     background-color: rgb(64, 64, 64);
 }
+
+.unlockwallet{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border: 1px solid rgba(255,255,255,.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background: #F8F8F8;
+}
+.wltone{
+    padding:5%;
+}
+.wlttwo{
+    padding: 5%;
+}
+
+.height{
+    height: 30vmin;
+    width:  36vmin;
+    color:white;
+}
+
+.mybtn{
+    background: none;
+    border-radius: 10px;
+    width: 60%;
+    height: 70px;
+    padding:2%;
+    border-color: orange;
+    font-weight: bolder;
+    border: 2px solid white;
+    font-size: 2vw;
+}
+.mybtn:hover{
+    background: white;
+    color: orange;
+}
+.orange{
+    color:orange;
+}
+
+.biggerr{
+    font-size: 2vw;
+}
+
+.green{
+    color: green;
+}
+.newicon{
+    height: 40vmin;
+    width:  22vmin;
+    color:orange
+}
+
+.bkch{
+    background: orange;
+}
+
+/* .whiter{
+    color: white;
+} */
