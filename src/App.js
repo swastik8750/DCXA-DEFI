@@ -16,6 +16,7 @@ import Farming from "./Farming/Farming";
 import ComingSoon from "./ComingSoon/ComingSoon"
 import Lend from "./Lend/Lend";
 import NFT from "./nft/NFT";
+import Farm from "./FarmStake/Farm";
 
 const theme = createTheme({
   palette: {
@@ -103,6 +104,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <NarBar />
           <Route exact path="/" component={Home} /> 
+          <Route exact path="/farmmm" component={Farm} /> 
           <Route path="/swap" component={CoinSwapper} />
           <Route exact path="/borrow_detailed" component={Borrow_Detailed} />
           <Route exact path="/borrow" component={Borrow} />

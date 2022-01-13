@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { useEffect } from 'react';
 import { FaWallet } from 'react-icons/fa';
 import { FcNeutralTrading,FcDeployment,FcLandscape,FcBusiness,FcFilingCabinet } from 'react-icons/fc';
+import Farm from '../FarmStake/Farm';
 
 export default function Home() {           
 return (
@@ -18,6 +19,10 @@ return (
         <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
         <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
         </div>
+        <Farm>
+            
+        </Farm>
+
         <div className="unlockwallet">
                 <div className="wltone">
                     <FaWallet className='height' />
