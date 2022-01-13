@@ -42,3 +42,30 @@ width: 80%;
 #ifo{
     background-color: rgb(64, 64, 64);
 }
+
+.unlockwallet{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border: 1px solid rgba(255,255,255,.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background: #F8F8F8;
+}
+.wltone{
+    padding:3%;
+}
+.wlttwo{
+    padding: 3%;
+}
+
+.height{
+    height: 200px;
+    width:  200px;
+    color:#f7a816;
+}
