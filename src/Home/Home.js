@@ -19,10 +19,7 @@ return (
         <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
         <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
         </div>
-        <Farm>
-            
-        </Farm>
-
+        <Farm/>
         <div className="unlockwallet">
                 <div className="wltone">
                     <FaWallet className='height' />

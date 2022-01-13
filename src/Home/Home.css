@@ -9,6 +9,12 @@
 }
 #headline{
     font-size:70px;
+    font-family: GilroyMedium;
+    font-size: 64px;
+    font-weight: 700;
+    color: rgb(25, 123, 189);
+    margin-bottom: -3%;
+    text-align: center;
 }
 #abc{
 display: flex;
