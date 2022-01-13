@@ -3,26 +3,28 @@ import './Home.css';
 import * as THREE from 'three';
 import { useEffect } from 'react';
 import { FaWallet } from 'react-icons/fa';
+
 import { FaUnlock } from 'react-icons/fa';
 import {ImStatsBars} from 'react-icons/im';
 import FadeIn from 'react-fade-in';
+import { FcNeutralTrading,FcDeployment,FcLandscape,FcBusiness,FcFilingCabinet } from 'react-icons/fc';
+import Farm from '../FarmStake/Farm';
 
-export default function Home() {
-    return (
-        <div>
-            <div className="ontop">
-                <h1 id="headline">DCXA FINANCE</h1>
-                <img src="https://dcxa.io/sliders/1636222743.png" />
-            </div>
-            <div id="abc">
-                <div className="xyz" id="trade">Trade</div>
-                <div className="xyz" id="farming">Farming</div>
-                <div className="xyz" id="staking">Staking</div>
-                <div className="xyz" id="ifo">IFO</div>
-            </div>
-
-            <FadeIn delay="700">
-            <div className="unlockwallet">
+export default function Home() {           
+return (
+    <div>
+        <div className="ontop">
+            <h1 id="headline">DCXA FINANCE</h1>
+            <img src="https://dcxa.io/sliders/1636222743.png"/>
+        </div>
+        <div id="abc">
+        <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
+        <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
+        <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
+        <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
+        </div>
+        <Farm/>
+        <div className="unlockwallet">
                 <div className="wltone">
                     <FaWallet className='height' />
                 </div>

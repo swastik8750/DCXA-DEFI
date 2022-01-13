@@ -1,0 +1,123 @@
+.farm_main_container{
+gap: 16px;
+display:flex;
+margin: auto;
+margin-top: 25px;
+width: 50%;
+
+padding: 10px;
+}
+.farm_subcontainer{
+    width: 45%;
+    background-color: rgb(228, 97, 73);
+    border-radius: 19px;
+
+}
+.farm_unlockbutton{
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 19px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px;
+    color: rgb(228, 97, 73);
+    cursor: pointer;
+    display: flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    line-height: 1;
+
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding:10px;
+    transition: background-color 0.2s ease 0s;
+}
+.farm_unlockbutton:hover:not(:disabled):not(:active){
+    background-color: rgb(250, 224, 220);
+    border-color: currentcolor;
+}
+button{
+    border:none;
+    background: none;
+}
+
+.farm_subcontainer_upper
+{
+    padding: 24px;
+}
+.farm_subcontainer_subupper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.farmtext{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-top: 14px;
+    line-height: 1.1;
+    font-family: GilroyRegular, sans-serif !important;
+    text-align: left;
+}
+.logo{
+    width: 83px;
+    height: 138px;
+    border-radius: 41px;
+    margin-top: 14px;
+}
+.farm_kebabtoharvest
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.kebab1
+{
+    font-family: GilroySemiBold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 12px;
+}
+.locked
+{
+    margin-bottom: 12px;
+}
+.locked11
+{
+    font-family: GilroySemiBold;
+    color: rgb(247, 208, 201);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.farm_kebabtowallet
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.Dcxatowallet
+{
+    font-family: GilroySemiBold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 12px;
+}
+.lockedd
+{
+    margin-bottom: 12px;
+}
+.lockedd11{
+    font-family: GilroySemiBold;
+    color: rgb(247, 208, 201);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}

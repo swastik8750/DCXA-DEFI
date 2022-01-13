@@ -1,6 +1,6 @@
 
 .ontop{ 
-    margin: 0% 10% 0% 10%;
+    margin: auto;
     width: 80%;
     background-size: cover;
     height: 100%;
@@ -9,6 +9,12 @@
 }
 #headline{
     font-size:70px;
+    font-family: GilroyMedium;
+    font-size: 64px;
+    font-weight: 700;
+    color: rgb(25, 123, 189);
+    margin-bottom: -3%;
+    text-align: center;
 }
 #abc{
 display: flex;
@@ -24,15 +30,32 @@ width: 80%;
     justify-content: center;
     text-align: center;
     align-items: center;
-    display: flex;
+    display: block;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    border: 1px solid rgba(255,255,255,.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    
+}
+#color{
     color: white;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(2, 2, 2, 0.35) 0px 5px 15px;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    width: 60%;
+    height: 60%;
+}
+#color:hover{
+    margin-top:-30%;
 }
 #trade{
     background-color: rgb(25, 123, 189);
 }
-
 #farming{
     background-color: rgb(17, 163, 115);
 }
@@ -42,12 +65,6 @@ width: 80%;
 #ifo{
     background-color: rgb(64, 64, 64);
 }
-
-
-
-
-
-
 
 .unlockwallet{
     display: flex;
