@@ -1,14 +1,16 @@
 .farm_main_container{
-gap: 16px;
 display:flex;
 margin: auto;
+margin-left: 16%;
 margin-top: 25px;
-width: 50%;
+gap: 20px;
+width: 66%;
+grid-template-columns: repeat(2, 1fr);
 
 padding: 10px;
 }
 .farm_subcontainer{
-    width: 45%;
+    width: 50%;
     background-color: rgb(228, 97, 73);
     border-radius: 19px;
 
@@ -66,7 +68,7 @@ button{
     text-align: left;
 }
 .logo{
-    width: 83px;
+    width: 107px;
     height: 138px;
     border-radius: 41px;
     margin-top: 14px;
@@ -120,4 +122,42 @@ button{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+}
+.htRmZZ {
+    fill: currentcolor;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+.fartweet
+{
+    background-color: rgb(237, 241, 243);
+    box-shadow: none;
+    width: 50%;
+    height: 439px;
+    margin: auto;
+    border-radius: 19px;
+    color: rgb(35, 0, 30);
+    overflow: hidden;
+    position: relative;
+}
+.farm_tweet{
+    padding: 24px;
+}
+
+.farm_tweet_header{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.tweet_text{
+    font-size: 26px;
+    text-align: left;
+    font-weight: 700;
+    color: rgb(29, 161, 242);
+    margin-top: 14px;
+    line-height: 1.1;
+}
+.farm_tweet_img{
+    width: 96px;
+    height: 78px;
 }
