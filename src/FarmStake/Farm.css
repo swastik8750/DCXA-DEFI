@@ -160,3 +160,9 @@ button{
     width: 96px;
     height: 78px;
 }
+
+.farm_tweet_maincontent{
+    width:100% ;
+    height:60%;
+    margin:auto;
+}

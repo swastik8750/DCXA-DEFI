@@ -1,4 +1,5 @@
 import React from "react";
+import { Tweet } from 'react-twitter-widgets'
 import tweeter from "../FarmStake/images/tweeter.svg";
 import {FcStackOfPhotos} from 'react-icons/fc';
 // import 'https://platform.twitter.com/widgets.js';
@@ -49,8 +50,7 @@ export default function Farm() {
             <img src={tweeter} alt="Tweeter" className="farm_tweet_img" />
           </div>
           <div className="farm_tweet_maincontent">
-          
-         
+            <Tweet tweetId="1481846168816693248" className="tweetrender"/>
           </div>
         </div>
       </div>

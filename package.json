@@ -32,6 +32,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-three-fiber": "^6.0.13",
+    "react-twitter-widgets": "^1.10.0",
     "remark-gfm": "^1.0.0",
     "semantic-ui-react": "^2.0.4",
     "simplex-noise": "^3.0.1",
