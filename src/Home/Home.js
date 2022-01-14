@@ -13,6 +13,9 @@ import Farm from '../FarmStake/Farm';
 export default function Home() {
     return (
         <div>
+            <FadeIn delay="700">
+
+           
             <div class="header_home">
                 <div class="inner-header flex">
                     <h1 class="headline">DCXA FINANCE</h1>
@@ -36,14 +39,20 @@ export default function Home() {
                     </svg>
                 </div>
             </div>
+            </FadeIn>
             <div id="content">
+            <FadeIn delay="700">
         <div id="abc">
         <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
         <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
         <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
         <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
         </div>
+        </FadeIn>
+        <FadeIn delay="700">
         <Farm/>
+        </FadeIn>
+
         <FadeIn delay="700">
                 <div className="unlockwallet bkch">
                     <div className="wltone">

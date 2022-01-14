@@ -201,8 +201,12 @@ body {
   padding-right:15px;
   display:inline-block;
   vertical-align: middle;
+  transition: transform .7s ease-in-out;
 }
-
+.logo:hover{
+  filter: drop-shadow(0 0 1rem  rgb(58, 24, 121));
+  transform: rotate(360deg);
+}
 .inner-header {
   height:80vh;
   width:100%;
