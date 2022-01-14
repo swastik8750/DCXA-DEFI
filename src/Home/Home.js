@@ -29,7 +29,8 @@ return (
         <FadeIn delay="700">
                 <div className="unlockwallet bkch">
                     <div className="wltone">
-                        <FaWallet className='height' />
+                        {/* <FaWallet className='height' /> */}
+                        <img src="https://kebabfinance.com/images/wallet.png" className='height'/>
                     </div>
                     <div className='wlttwo'>
                         <div className='mb-4'><button className='mybtn whiter'>Unlock Wallet <FaUnlock /></button></div>
@@ -38,22 +39,20 @@ return (
                 </div>
             </FadeIn>
             <FadeIn delay="700">
-                <div className="unlockwallet">
+                <div className="unlockwallet whi">
                     <div>
-
                         <ImStatsBars className='newicon' />
-
                     </div>
                     <div className="wltone bolderr">
-                        <div className='cl mb-4 biggerr'><b>DCXa STATS</b></div>
-                        <div className='mb-3 bigger'>Total DCXa Supply <span className='green mll'><b>11,223,345</b></span></div>
+                        <div className='stats mb-4 biggerr'><b>DCXa STATS</b></div>
+                        <div className='mb-3 pt-3 bigger'>Total DCXa Supply <span className='green mll'><b>11,223,345</b></span></div>
                         <div className='mb-3 bigger'>Total DCXa Burned <span className='green mll'><b>0.000</b></span></div>
                         <div className='bigger'>New DCXa/Block <span className='green mll'><b>3</b></span></div>
                     </div>
-                    <div className='wlttwo'>
-                        <div className='cl mb-5 biggerr bolder'>TOTAL VAULT</div>
-                        <div className='mb-3 bigger green'>$229,058.01</div>
-                        <div className='mb-3 bigger'>Across all farming pairs and stakings</div>
+                    <div className='wlttwo bolderr'>
+                        <div className='stats mb-5 biggerr bolder'><b>TOTAL VAULT</b></div>
+                        <div className='mb-3 big stats'>$229,058.01</div>
+                        <div className='mb-3 bigger green'>Across all farming pairs and stakings</div>
                     </div>
                 </div>
             </FadeIn>

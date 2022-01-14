@@ -11444,6 +11444,11 @@
   dependencies:
     "queue-tick" "^1.0.0"
 
+"nan@^2.14.0", "nan@^2.5.1":
+  "integrity" "sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ=="
+  "resolved" "https://registry.npmjs.org/nan/-/nan-2.15.0.tgz"
+  "version" "2.15.0"
+
 "nano-json-stream-parser@^0.1.2":
   "integrity" "sha1-DMj20OK2IrR5xA1JnEbWS3Vcb18="
   "resolved" "https://registry.npmjs.org/nano-json-stream-parser/-/nano-json-stream-parser-0.1.2.tgz"
@@ -11638,7 +11643,12 @@
   "resolved" "https://registry.npmjs.org/node-forge/-/node-forge-0.10.0.tgz"
   "version" "0.10.0"
 
-"node-gyp-build@^4.2.0", "node-gyp-build@^4.2.2":
+"node-gyp-build@^3.0.0":
+  "integrity" "sha512-zLcTg6P4AbcHPq465ZMFNXx7XpKKJh+7kkN699NiQWisR2uWYOWNWqRHAmbnmKiL4e9aLSlmy5U7rEMUXV59+A=="
+  "resolved" "https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-3.9.0.tgz"
+  "version" "3.9.0"
+
+"node-gyp-build@^4.1.0", "node-gyp-build@^4.2.0", "node-gyp-build@^4.2.2":
   "integrity" "sha512-MN6ZpzmfNCRM+3t57PTJHgHyw/h4OWnZ6mR8P5j/uZtqQr46RRuDE/P+g3n0YR/AiYXeWixZZzaip77gdICfRg=="
   "resolved" "https://registry.npmjs.org/node-gyp-build/-/node-gyp-build-4.2.3.tgz"
   "version" "4.2.3"
@@ -15178,6 +15188,15 @@
     "siphash24" "^1.0.1"
     "xsalsa20" "^1.0.0"
 
+"sodium-native@^2.0.0":
+  "integrity" "sha512-mbkiyA2clyfwAyOFIzMvsV6ny2KrKEIhFVASJxWfsmgfUEymgLIS2MLHHcGIQMkrcKhPErRaMR5Dzv0EEn+BWg=="
+  "resolved" "https://registry.npmjs.org/sodium-native/-/sodium-native-2.4.9.tgz"
+  "version" "2.4.9"
+  dependencies:
+    "ini" "^1.3.5"
+    "nan" "^2.14.0"
+    "node-gyp-build" "^4.1.0"
+
 "sodium-universal@^2.0.0":
   "integrity" "sha512-csdVyakzHJRyCevY4aZC2Eacda8paf+4nmRGF2N7KxCLKY2Ajn72JsExaQlJQ2BiXJncp44p3T+b80cU+2TTsg=="
   "resolved" "https://registry.npmjs.org/sodium-universal/-/sodium-universal-2.0.0.tgz"
@@ -16720,7 +16739,16 @@
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
 
-"utp-native@^1.7.2", "utp-native@^2.1.3":
+"utp-native@^1.7.2":
+  "integrity" "sha512-vRAKaS8WcYNgzbxyH2LdheqgL4sQLis8LXl7r/mN+O4mpWlUpoCsTtietxepLrft2q0TFA2gaIvSWN1iRkzW/w=="
+  "resolved" "https://registry.npmjs.org/utp-native/-/utp-native-1.7.3.tgz"
+  "version" "1.7.3"
+  dependencies:
+    "nan" "^2.5.1"
+    "node-gyp-build" "^3.0.0"
+    "readable-stream" "^2.2.2"
+
+"utp-native@^2.1.3":
   "integrity" "sha512-sWTrWYXPhhWJh+cS2baPzhaZc89zwlWCfwSthUjGhLkZztyPhcQllo+XVVCbNGi7dhyRlxkWxN4NKU6FbA9Y8w=="
   "resolved" "https://registry.npmjs.org/utp-native/-/utp-native-2.5.3.tgz"
   "version" "2.5.3"
