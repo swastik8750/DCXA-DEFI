@@ -5,20 +5,38 @@ import { useEffect } from 'react';
 import { FaWallet } from 'react-icons/fa';
 import Iconn from '../af.png';
 import { FaUnlock } from 'react-icons/fa';
-import {ImStatsBars} from 'react-icons/im';
+import { ImStatsBars } from 'react-icons/im';
 import FadeIn from 'react-fade-in';
-import { FcNeutralTrading,FcDeployment,FcLandscape,FcBusiness,FcFilingCabinet } from 'react-icons/fc';
+import { FcNeutralTrading, FcDeployment, FcLandscape, FcBusiness, FcFilingCabinet } from 'react-icons/fc';
 import Farm from '../FarmStake/Farm';
 
-export default function Home() {           
-return (
-    <div>
-        <h1 id="headline">DCXA FINANCE</h1>
-        <div class="ico">
-            <img class="ico-ani1" src="https://dcxa.io/token\1636798191.png" />
-            <img class="ico-ani3" src="https://dcxa.io/token\1636798145.png" />
-        </div>
-    <div id="content">
+export default function Home() {
+    return (
+        <div>
+            <div class="header_home">
+                <div class="inner-header flex">
+                    <h1 class="headline">DCXA FINANCE</h1>
+                    <div class="ico">
+                        <img class="ico-ani1" src="https://dcxa.io/token\1636798191.png" />
+                        <img class="ico-ani3" src="https://dcxa.io/token\1636798145.png" />
+                    </div>
+                </div>
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div id="content">
         <div id="abc">
         <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
         <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
