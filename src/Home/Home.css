@@ -135,7 +135,9 @@
 .wlttwo{
     padding: 5%;
 }
-
+.wlt{
+    padding: 3%;
+}
 .height{
     height: 17vw;
     width:  22vw;
@@ -169,11 +171,16 @@
     font-weight: bolder;
 }
 .newicon{
-    height: 40vmin;
-    width:  22vmin;
+    height: 34vmin;
+    width:  35vmin;
     color:orange
 }
-
+.ml
+{
+    margin-left: 15px;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
 .bkch{
     background: #FFC145;
 }

@@ -3,7 +3,7 @@ import './Home.css';
 import * as THREE from 'three';
 import { useEffect } from 'react';
 import { FaWallet } from 'react-icons/fa';
-
+import Iconn from '../af.png';
 import { FaUnlock } from 'react-icons/fa';
 import {ImStatsBars} from 'react-icons/im';
 import FadeIn from 'react-fade-in';
@@ -40,16 +40,17 @@ return (
             </FadeIn>
             <FadeIn delay="700">
                 <div className="unlockwallet whi">
-                    <div>
-                        <ImStatsBars className='newicon' />
+                    <div className='ml'>
+                        {/* <ImStatsBars className='newicon' /> */}
+                        <img src={Iconn} className='newicon'/>
                     </div>
-                    <div className="wltone bolderr">
+                    <div className="wlt bolderr">
                         <div className='stats mb-4 biggerr'><b>DCXa STATS</b></div>
                         <div className='mb-3 pt-3 bigger'>Total DCXa Supply <span className='green mll'><b>11,223,345</b></span></div>
                         <div className='mb-3 bigger'>Total DCXa Burned <span className='green mll'><b>0.000</b></span></div>
                         <div className='bigger'>New DCXa/Block <span className='green mll'><b>3</b></span></div>
                     </div>
-                    <div className='wlttwo bolderr'>
+                    <div className='wlt bolderr'>
                         <div className='stats mb-5 biggerr bolder'><b>TOTAL VAULT</b></div>
                         <div className='mb-3 big stats'>$229,058.01</div>
                         <div className='mb-3 bigger green'>Across all farming pairs and stakings</div>
