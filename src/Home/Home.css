@@ -130,11 +130,12 @@
 .wlttwo{
     padding: 5%;
 }
-
+.wlt{
+    padding: 3%;
+}
 .height{
-    height: 30vmin;
-    width:  36vmin;
-    color:white;
+    height: 17vw;
+    width:  22vw;
 }
 
 .mybtn{
@@ -161,22 +162,23 @@
 }
 
 .green{
-    color: green;
+    color: #E6705A;
+    font-weight: bolder;
 }
 .newicon{
-    height: 40vmin;
-    width:  22vmin;
+    height: 34vmin;
+    width:  35vmin;
     color:orange
 }
-
-.bkch{
-    background: orange;
+.ml
+{
+    margin-left: 15px;
+    margin-top: 14px;
+    margin-bottom: 15px;
 }
-
-
-
-
-
+.bkch{
+    background: #FFC145;
+}
 
 
 @import url(//fonts.googleapis.com/css?family=Lato:300:400);
@@ -272,4 +274,14 @@ body {
   h1 {
     font-size:24px;
   }
+=======
+/* .whiter{
+    color: white;
+} */
+
+.stats{
+    color:#23001E;
+}
+.whi{
+    background: white;
 }
