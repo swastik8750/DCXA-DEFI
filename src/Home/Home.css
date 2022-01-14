@@ -137,9 +137,8 @@
 }
 
 .height{
-    height: 30vmin;
-    width:  36vmin;
-    color:white;
+    height: 17vw;
+    width:  22vw;
 }
 
 .mybtn{
@@ -166,7 +165,8 @@
 }
 
 .green{
-    color: green;
+    color: #E6705A;
+    font-weight: bolder;
 }
 .newicon{
     height: 40vmin;
@@ -175,9 +175,16 @@
 }
 
 .bkch{
-    background: orange;
+    background: #FFC145;
 }
 
 /* .whiter{
     color: white;
 } */
+
+.stats{
+    color:#23001E;
+}
+.whi{
+    background: white;
+}
