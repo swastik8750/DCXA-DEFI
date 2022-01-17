@@ -82,10 +82,11 @@
     border: 1px solid rgba(255,255,255,.2);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 20px;
+    border: none;
 }
 #color{
     color: white;
-    background-color: white;
+    background: white;
     border: 2px solid white;
     border-radius: 10px;
     box-shadow: rgba(2, 2, 2, 0.35) 0px 5px 15px;
@@ -93,12 +94,11 @@
     margin-bottom: 15%;
     width: 60%;
     height: 60%;
+    z-index: 100;
 }
-#color:hover{
-    margin-top:-30%;
-}
-#trade{
+/* #trade{
     background-color: rgb(25, 123, 189);
+    background-blend-mode: overlay;
 }
 #farming{
     background-color: rgb(17, 163, 115);
@@ -108,8 +108,18 @@
 }
 #ifo{
     background-color: rgb(64, 64, 64);
-}
+} */
 
+.xyz {
+    background: linear-gradient(to right, #43cea2,#185a9d) no-repeat 0 0;
+    opacity:0.7;
+    cursor: pointer;
+  }
+.xyz:hover{
+    background: linear-gradient(to right, #fae311,#ffc400); 
+    color: #185a9d;
+    z-index: 2;
+  }
 .unlockwallet{
     display: flex;
     text-align: center;
