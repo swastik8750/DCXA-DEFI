@@ -43,7 +43,7 @@ export default function Home() {
             <div id="content">
             <FadeIn delay="700">
         <div id="abc">
-        <div className="xyz" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
+        <div className="xyz overlay" id="trade"><div><FcNeutralTrading id="color" /></div><div>Trade</div></div>
         <div className="xyz" id="farming"><div><FcLandscape id="color" /></div><div>Farming</div></div>
         <div className="xyz" id="staking"><div><FcDeployment id="color" /></div><div>Staking</div></div>
         <div className="xyz" id="ifo"><div><FcFilingCabinet id="color" /></div><div>IFO</div></div>
